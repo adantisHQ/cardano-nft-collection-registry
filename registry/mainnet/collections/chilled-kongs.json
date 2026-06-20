@@ -1,0 +1,154 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "chilled-kongs",
+  "name": "Chilled Kongs",
+  "definition_status": "complete",
+  "policy_ids": [
+    "c56d4cceb8a8550534968e1bf165137ca41e908d2d780cc1402079bd"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Chilled Kongs"
+    },
+    "description": {
+      "value": "Chilled Kongs base PFP policy; flat root traits with files[]."
+    },
+    "category": {
+      "value": "pfp"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "hat",
+      "display_name": "hat",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "hat"
+      }
+    },
+    {
+      "canonical_trait": "body",
+      "display_name": "body",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "body"
+      }
+    },
+    {
+      "canonical_trait": "eyes",
+      "display_name": "eyes",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "eyes"
+      }
+    },
+    {
+      "canonical_trait": "mouth",
+      "display_name": "mouth",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "mouth"
+      }
+    },
+    {
+      "canonical_trait": "clothes",
+      "display_name": "clothes",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "clothes"
+      }
+    },
+    {
+      "canonical_trait": "special",
+      "display_name": "special",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "special"
+      }
+    },
+    {
+      "canonical_trait": "earrings",
+      "display_name": "earrings",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "earrings"
+      }
+    },
+    {
+      "canonical_trait": "background",
+      "display_name": "background",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "background"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    },
+    "files": [
+      {
+        "label": "Primary File",
+        "source_path": "$.files[0].src",
+        "media_type_path": "$.files[0].mediaType"
+      }
+    ]
+  },
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "Pairs with Chilled Kongs Vox Avatar policy."
+    }
+  ]
+}

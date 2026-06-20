@@ -1,0 +1,98 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "cnftcon-legacy-pass",
+  "name": "cNFTcon Legacy Pass",
+  "definition_status": "partial",
+  "policy_ids": [
+    "5fa72fbeecbe80a3e15de1cacab54ba5e310e2c36ae85351132ed4ad"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "cNFTcon Legacy Pass"
+    },
+    "description": {
+      "value": "Event legacy pass with nested Website and publisher link objects."
+    },
+    "category": {
+      "value": "membership"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "artist",
+      "display_name": "artist",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "artist"
+      }
+    },
+    {
+      "canonical_trait": "Max Supply",
+      "display_name": "Max Supply",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Max Supply"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    },
+    "files": [
+      {
+        "label": "Primary File",
+        "source_path": "$.files[0].src",
+        "media_type_path": "$.files[0].mediaType"
+      }
+    ],
+    "animation": {
+      "source_path": "$.files[0].src",
+      "source": "cip25",
+      "notes": "Animated pass media"
+    }
+  },
+  "social_mappings": {},
+  "link_mappings": {
+    "website": {
+      "source_path": "$.Website.cNFTcon",
+      "source": "cip25"
+    },
+    "other": {
+      "source_path": "$.publisher.Buffy Bot Publishing",
+      "source": "cip25",
+      "notes": "Publisher URL"
+    }
+  },
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": []
+}

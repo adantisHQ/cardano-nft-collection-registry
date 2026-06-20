@@ -1,0 +1,36 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "raccoon-syndicate",
+  "name": "Raccoon Syndicate",
+  "definition_status": "partial",
+  "policy_ids": [
+    "59142df7dfea56a5b76b842c206fc7bd844b43a2d10f5eb05f695dcb"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Raccoon Syndicate"
+    },
+    "description": {
+      "value": ""
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "unknown",
+    "metadata_root": "$",
+    "asset_name_encoding": "unknown"
+  },
+  "trait_mappings": [],
+  "media_mappings": {},
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {},
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "Phase 3A Top-100 include_now (TapTools rank 39). Type: pfp. Discovery only — no final definition in this pass."
+    }
+  ]
+}

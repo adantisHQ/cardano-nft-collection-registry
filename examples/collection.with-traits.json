@@ -1,0 +1,173 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "pixel-pals",
+  "name": "Pixel Pals",
+  "definition_status": "complete",
+  "policy_ids": [
+    "deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Pixel Pals"
+    },
+    "description": {
+      "value": "A generative pixel-art collection with layered traits."
+    },
+    "category": {
+      "value": "pfp"
+    },
+    "tags": ["pfp", "generative", "pixel-art"]
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    },
+    "custom": {
+      "description": "Traits are stored in standard CIP-25 attributes with occasional lowercase keys."
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "Background",
+      "display_name": "Background",
+      "value_type": "enum",
+      "category": "visual",
+      "required": false,
+      "dynamic": false,
+      "source": "cip25",
+      "source_paths": [
+        "$.attributes.Background",
+        "$.attributes.background"
+      ],
+      "normalization": {
+        "blue": "Blue",
+        "BLUE": "Blue"
+      },
+      "allowed_values": ["Blue", "Red", "Green", "Purple"],
+      "notes": ""
+    },
+    {
+      "canonical_trait": "Eyes",
+      "display_name": "Eyes",
+      "value_type": "enum",
+      "category": "visual",
+      "required": false,
+      "dynamic": false,
+      "source": "cip25",
+      "source_paths": ["$.attributes.Eyes"],
+      "allowed_values": ["Normal", "Laser", "Sleepy"]
+    },
+    {
+      "canonical_trait": "Rarity Score",
+      "display_name": "Rarity Score",
+      "value_type": "score",
+      "category": "stats",
+      "required": false,
+      "dynamic": true,
+      "source": "custom",
+      "source_paths": ["$.attributes.Rarity Score"]
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    },
+    "animation": {
+      "source_path": "$.animation_url",
+      "source": "cip25"
+    },
+    "logo": {
+      "value": "https://example.com/pixel-pals/logo.png",
+      "source": "registry"
+    },
+    "banner": {
+      "value": "https://example.com/pixel-pals/banner.png",
+      "source": "registry"
+    },
+    "files": [
+      {
+        "label": "High Resolution Image",
+        "source_path": "$.files[0].src",
+        "media_type_path": "$.files[0].mediaType"
+      }
+    ]
+  },
+  "social_mappings": {
+    "x": {
+      "value": "https://x.com/pixelpals",
+      "source": "registry"
+    },
+    "discord": {
+      "value": "https://discord.gg/pixelpals",
+      "source": "registry"
+    }
+  },
+  "link_mappings": {
+    "website": {
+      "value": "https://example.com/pixel-pals",
+      "source": "registry"
+    },
+    "mint": {
+      "value": "https://mint.example.com/pixel-pals",
+      "source": "registry"
+    }
+  },
+  "external_resources": [
+    {
+      "type": "trait_manifest",
+      "label": "Trait Manifest",
+      "uri": "ipfs://QmPixelPalsTraitManifest",
+      "hash": null,
+      "notes": "Off-chain trait manifest for analytics tools"
+    }
+  ],
+  "license_info": {
+    "license": {
+      "value": "All Rights Reserved",
+      "source": "registry"
+    },
+    "commercial_use": {
+      "value": false,
+      "source": "registry"
+    },
+    "derivative_use": {
+      "value": false,
+      "source": "registry"
+    }
+  },
+  "royalty_info": {
+    "has_royalties": true,
+    "source": "cip27",
+    "royalty_percentage": {
+      "value": 5,
+      "source": "registry"
+    },
+    "notes": "Standard CIP-27 royalty metadata on policy"
+  },
+  "normalization_rules": [
+    {
+      "type": "trait_value",
+      "from": "blu",
+      "to": "Blue",
+      "scope": "trait",
+      "notes": "Legacy typo in early mint metadata"
+    }
+  ],
+  "indexing_notes": [
+    {
+      "severity": "warning",
+      "message": "Some early mints use lowercase trait keys; indexers should try alternate source_paths."
+    }
+  ]
+}

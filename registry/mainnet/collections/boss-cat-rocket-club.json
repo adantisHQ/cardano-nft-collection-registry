@@ -1,0 +1,107 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "boss-cat-rocket-club",
+  "name": "Boss Cat Rocket Club",
+  "definition_status": "complete",
+  "policy_ids": [
+    "c364930bd612f42e14d156e1c5410511e77f64cab8f2367a9df544d1"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Boss Cat Rocket Club"
+    },
+    "description": {
+      "value": "Boss Cat Rocket Club PFP collection; flat root trait fields with companion Rocket Parts policy."
+    },
+    "category": {
+      "value": "pfp"
+    },
+    "tags": ["pfp", "gaming", "boss-cat"]
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    },
+    "custom": {
+      "description": "PFP traits stored as capitalized flat root string fields."
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "Fur",
+      "display_name": "Fur",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Fur" }
+    },
+    {
+      "canonical_trait": "Eyes",
+      "display_name": "Eyes",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Eyes" }
+    },
+    {
+      "canonical_trait": "Mouth",
+      "display_name": "Mouth",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Mouth" }
+    },
+    {
+      "canonical_trait": "Earring",
+      "display_name": "Earring",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Earring" }
+    },
+    {
+      "canonical_trait": "Background",
+      "display_name": "Background",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Background" }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    }
+  },
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "warning",
+      "message": "Policy/reference assets may have null on-chain metadata; skip or handle separately."
+    },
+    {
+      "severity": "info",
+      "message": "Boss Cat Rocket Parts uses a separate policy ID. Social links not present in sampled metadata."
+    }
+  ]
+}

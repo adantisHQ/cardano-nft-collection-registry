@@ -1,0 +1,89 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "gaming-item-spec",
+  "name": "Gaming Item Spec",
+  "definition_status": "complete",
+  "policy_ids": [
+    "f0200000000000000000000000000000000000000000000000000000"
+  ],
+  "identity": {
+    "display_name": { "value": "Gaming Item Spec" },
+    "description": {
+      "value": "Spec example: gaming item with flat root traits and files[] media (OREMOB-style layout)."
+    },
+    "category": { "value": "gaming" },
+    "tags": ["gaming", "spec-example"]
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    },
+    "custom": {
+      "description": "Gameplay stats stored as uppercase root keys."
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "CLASS",
+      "display_name": "Class",
+      "value_type": "enum",
+      "category": "gameplay",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "CLASS"
+      },
+      "allowed_values": ["Warrior", "Mage", "Rogue"]
+    },
+    {
+      "canonical_trait": "RARITY",
+      "display_name": "Rarity",
+      "value_type": "string",
+      "category": "rarity",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "RARITY"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    },
+    "files": [
+      {
+        "label": "Primary render",
+        "source_path": "$.files[0].src",
+        "media_type_path": "$.files[0].mediaType",
+        "source": "cip25"
+      }
+    ]
+  },
+  "social_mappings": {},
+  "link_mappings": {
+    "game": {
+      "value": "https://game.example.com",
+      "source": "registry"
+    }
+  },
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown"
+  },
+  "normalization_rules": [],
+  "indexing_notes": []
+}

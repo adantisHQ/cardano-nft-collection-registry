@@ -1,0 +1,22 @@
+{
+  "name": "@cardano-nft-collection-registry/cli",
+  "version": "0.1.0",
+  "description": "CLI for the Cardano NFT Collection Registry",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": {
+    "nft-collection-registry": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js",
+    "test": "vitest run",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@cardano-nft-collection-registry/core": "workspace:*"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.5"
+  }
+}

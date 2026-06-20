@@ -1,0 +1,142 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "deprecated-jungle-wenno-cat",
+  "name": "[DEPRECATED] Jungle Wenno Cat",
+  "definition_status": "partial",
+  "policy_ids": [
+    "3ca291585bbbd1deafab0495f8a7fda4753fbeae96c550492bcfd760"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "[DEPRECATED] Jungle Wenno Cat"
+    },
+    "description": {
+      "value": "Deprecated TapTools label; metadata present but image URI may be split across array elements."
+    },
+    "category": {
+      "value": "pfp"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "hats",
+      "display_name": "hats",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "hats"
+      }
+    },
+    {
+      "canonical_trait": "skin",
+      "display_name": "skin",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "skin"
+      }
+    },
+    {
+      "canonical_trait": "bottom",
+      "display_name": "bottom",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "bottom"
+      }
+    },
+    {
+      "canonical_trait": "family",
+      "display_name": "family",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "family"
+      }
+    },
+    {
+      "canonical_trait": "glasses",
+      "display_name": "glasses",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "glasses"
+      }
+    },
+    {
+      "canonical_trait": "backgrounds",
+      "display_name": "backgrounds",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "backgrounds"
+      }
+    },
+    {
+      "canonical_trait": "mysterious number",
+      "display_name": "mysterious number",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "mysterious number"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image[0]",
+      "source": "cip25",
+      "notes": "Image may be split across image[0] and image[1]; join for full URI if needed."
+    }
+  },
+  "social_mappings": {},
+  "link_mappings": {
+    "website": {
+      "source_path": "$.website",
+      "source": "cip25"
+    }
+  },
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "warning",
+      "message": "image field is a two-element array with IPFS CID split; image[0] alone may be incomplete."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://registry.adantis.io/schemas/sourced-value.schema.json",
+  "title": "SourcedValue",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "value": {},
+    "source_path": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["registry", "cip25", "cip68", "custom", "external"]
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

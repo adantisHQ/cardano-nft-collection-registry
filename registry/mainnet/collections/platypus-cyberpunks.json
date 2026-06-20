@@ -1,0 +1,36 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "platypus-cyberpunks",
+  "name": "Platypus Cyberpunks",
+  "definition_status": "partial",
+  "policy_ids": [
+    "787a6798527b21ad0e0f62c021b4ce036513a2d3342b5cb519d2ca19"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Platypus Cyberpunks"
+    },
+    "description": {
+      "value": ""
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "unknown",
+    "metadata_root": "$",
+    "asset_name_encoding": "unknown"
+  },
+  "trait_mappings": [],
+  "media_mappings": {},
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {},
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "Phase 3A Top-100 include_now (TapTools rank 81). Type: gaming. Discovery only — no final definition in this pass."
+    }
+  ]
+}

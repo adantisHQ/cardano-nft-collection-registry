@@ -1,0 +1,108 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "book-io-whitepaper-2",
+  "name": "Book.io - Whitepaper 2.0",
+  "definition_status": "partial",
+  "policy_ids": [
+    "b1f614be8ed0921f2d3fc4d013f2ab076fe62db43b5bdcce686c4377"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Book.io - Whitepaper 2.0"
+    },
+    "description": {
+      "value": "Book.io whitepaper NFT; license terms not present on-chain in samples."
+    },
+    "category": {
+      "value": "media"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "variation",
+      "display_name": "Variation",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.attributes.Variation"
+      }
+    },
+    {
+      "canonical_trait": "cover_theme",
+      "display_name": "Cover Theme",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.attributes.Cover Theme"
+      }
+    },
+    {
+      "canonical_trait": "book_title",
+      "display_name": "Book Title",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.extraAttributes.Book Title"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    },
+    "files": [
+      {
+        "label": "Primary File",
+        "source_path": "$.files[0].src",
+        "media_type_path": "$.files[0].mediaType"
+      }
+    ]
+  },
+  "social_mappings": {},
+  "link_mappings": {
+    "website": {
+      "source_path": "$.website",
+      "source": "cip25"
+    },
+    "documentation": {
+      "source_path": "$.data",
+      "source": "cip25"
+    }
+  },
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "warning",
+      "message": "No on-chain license/terms text; off-chain Book.io terms require registry-level license_info."
+    }
+  ]
+}

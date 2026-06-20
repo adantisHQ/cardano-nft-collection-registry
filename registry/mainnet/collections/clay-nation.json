@@ -1,0 +1,139 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "clay-nation",
+  "name": "Clay Nation",
+  "definition_status": "complete",
+  "policy_ids": [
+    "40fa2aa67258b4ce7b5782f74831d46a84c59a0ff0c28262fab21728"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Clay Nation"
+    },
+    "description": {
+      "value": "3D clay avatar NFT collection by Clay Mates; traits stored as flat root metadata fields."
+    },
+    "category": {
+      "value": "gaming"
+    },
+    "tags": ["gaming", "avatar", "3d", "clay-mates"]
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    },
+    "custom": {
+      "description": "Visual traits are top-level string fields, not nested under attributes."
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "body",
+      "display_name": "Body",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "body" }
+    },
+    {
+      "canonical_trait": "eyes",
+      "display_name": "Eyes",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "eyes" }
+    },
+    {
+      "canonical_trait": "brows",
+      "display_name": "Brows",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "brows" }
+    },
+    {
+      "canonical_trait": "mouth",
+      "display_name": "Mouth",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "mouth" }
+    },
+    {
+      "canonical_trait": "clothes",
+      "display_name": "Clothes",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "clothes" }
+    },
+    {
+      "canonical_trait": "background",
+      "display_name": "Background",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "background" }
+    },
+    {
+      "canonical_trait": "accessories",
+      "display_name": "Accessories",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "accessories" }
+    },
+    {
+      "canonical_trait": "hats_and_hair",
+      "display_name": "Hats and Hair",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "hats and hair" }
+    },
+    {
+      "canonical_trait": "project",
+      "display_name": "Project",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Project" }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    }
+  },
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "Social links and license were not present in sampled on-chain metadata."
+    },
+    {
+      "severity": "info",
+      "message": "Related Clay Nation ecosystem policies (Pitches, collabs) use separate policy IDs."
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "oremob",
+  "name": "OREMOB",
+  "definition_status": "complete",
+  "policy_ids": [
+    "062b1da3d344c1e6208ef908b2d308201e7ff6bcfddf0f606249817f"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "OREMOB"
+    },
+    "description": {
+      "value": "Anime mech PFP with extensive flat root trait grid and files[]."
+    },
+    "category": {
+      "value": "gaming"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "EAR",
+      "display_name": "EAR",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "EAR"
+      }
+    },
+    {
+      "canonical_trait": "MOB",
+      "display_name": "MOB",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "MOB"
+      }
+    },
+    {
+      "canonical_trait": "BACK",
+      "display_name": "BACK",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "BACK"
+      }
+    },
+    {
+      "canonical_trait": "BODY",
+      "display_name": "BODY",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "BODY"
+      }
+    },
+    {
+      "canonical_trait": "EYES",
+      "display_name": "EYES",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "EYES"
+      }
+    },
+    {
+      "canonical_trait": "NECK",
+      "display_name": "NECK",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "NECK"
+      }
+    },
+    {
+      "canonical_trait": "NOSE",
+      "display_name": "NOSE",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "NOSE"
+      }
+    },
+    {
+      "canonical_trait": "RANK",
+      "display_name": "RANK",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "RANK"
+      }
+    },
+    {
+      "canonical_trait": "MASKS",
+      "display_name": "MASKS",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "MASKS"
+      }
+    },
+    {
+      "canonical_trait": "EYEWEAR",
+      "display_name": "EYEWEAR",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "EYEWEAR"
+      }
+    },
+    {
+      "canonical_trait": "EYEBROWS",
+      "display_name": "EYEBROWS",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "EYEBROWS"
+      }
+    },
+    {
+      "canonical_trait": "HEADWEAR",
+      "display_name": "HEADWEAR",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "HEADWEAR"
+      }
+    },
+    {
+      "canonical_trait": "AUTOGRAPH",
+      "display_name": "AUTOGRAPH",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "AUTOGRAPH"
+      }
+    },
+    {
+      "canonical_trait": "HAIRSTYLE",
+      "display_name": "HAIRSTYLE",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "HAIRSTYLE"
+      }
+    },
+    {
+      "canonical_trait": "BACKGROUND",
+      "display_name": "BACKGROUND",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "BACKGROUND"
+      }
+    },
+    {
+      "canonical_trait": "RARITY SCORE",
+      "display_name": "RARITY SCORE",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "RARITY SCORE"
+      }
+    },
+    {
+      "canonical_trait": "MOUTH AND TEETH",
+      "display_name": "MOUTH AND TEETH",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "MOUTH AND TEETH"
+      }
+    },
+    {
+      "canonical_trait": "CLOTHING LAYER 1",
+      "display_name": "CLOTHING LAYER 1",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "CLOTHING LAYER 1"
+      }
+    },
+    {
+      "canonical_trait": "CLOTHING LAYER 2",
+      "display_name": "CLOTHING LAYER 2",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "CLOTHING LAYER 2"
+      }
+    },
+    {
+      "canonical_trait": "RARITY DESCRIPTION",
+      "display_name": "RARITY DESCRIPTION",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "RARITY DESCRIPTION"
+      }
+    },
+    {
+      "canonical_trait": "SCARS, WOUNDS AND BODYART",
+      "display_name": "SCARS, WOUNDS AND BODYART",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "SCARS, WOUNDS AND BODYART"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    },
+    "files": [
+      {
+        "label": "Primary File",
+        "source_path": "$.files[0].src",
+        "media_type_path": "$.files[0].mediaType"
+      }
+    ]
+  },
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": []
+}

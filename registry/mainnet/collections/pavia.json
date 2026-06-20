@@ -1,0 +1,122 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "pavia",
+  "name": "Pavia",
+  "definition_status": "complete",
+  "policy_ids": [
+    "4bf184e01e0f163296ab253edd60774e2d34367d0e7b6cbc689b567d"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Pavia"
+    },
+    "description": {
+      "value": "Cardano metaverse land parcels; coordinates and land type stored in decorative section arrays."
+    },
+    "category": {
+      "value": "land"
+    },
+    "tags": ["metaverse", "land", "gaming"]
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    },
+    "custom": {
+      "description": "Land parcel fields use array-of-singleton-object sections (-----Land Sale 1-----)."
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "land_type",
+      "display_name": "Land Type",
+      "value_type": "string",
+      "category": "parcel",
+      "required": true,
+      "source": "custom",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.-----Land Sale 1-----",
+        "key": "type"
+      }
+    },
+    {
+      "canonical_trait": "x",
+      "display_name": "X Coordinate",
+      "value_type": "string",
+      "category": "parcel",
+      "required": true,
+      "source": "custom",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.-----Land Sale 1-----",
+        "key": "x"
+      }
+    },
+    {
+      "canonical_trait": "y",
+      "display_name": "Y Coordinate",
+      "value_type": "string",
+      "category": "parcel",
+      "required": true,
+      "source": "custom",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.-----Land Sale 1-----",
+        "key": "y"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    }
+  },
+  "social_mappings": {},
+  "link_mappings": {
+    "website": {
+      "value": "https://pavia.io",
+      "source": "registry",
+      "notes": "Website also appears nested in -----Product Information----- on some parcels; registry value used for collection-level link."
+    }
+  },
+  "external_resources": [],
+  "license_info": {
+    "license": {
+      "value": "Pavia Corp 2021; all rights reserved",
+      "source": "registry",
+      "notes": "Copyright text observed in -----Product Information----- section on sampled parcels."
+    }
+  },
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "warning",
+      "message": "Image field may be a bare IPFS CID without ipfs:// prefix on some parcels."
+    },
+    {
+      "severity": "info",
+      "message": "Land fields extracted via array_singleton_object on -----Land Sale 1----- (GAP-001 resolved)."
+    },
+    {
+      "severity": "info",
+      "message": "Social links were not present at metadata root in samples; copyright appears in Product Information array."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "equinenft-pioneer-horses",
+  "name": "EquineNFT Pioneer Horses",
+  "definition_status": "partial",
+  "policy_ids": [
+    "30ed3d95db1d6bb2c12fc5228a2986eab4553f192a12a4607780e15b"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "EquineNFT Pioneer Horses"
+    },
+    "description": {
+      "value": ""
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "unknown",
+    "metadata_root": "$",
+    "asset_name_encoding": "unknown"
+  },
+  "trait_mappings": [],
+  "media_mappings": {},
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {},
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "Phase 3A Top-100 include_now (TapTools rank 44). Type: gaming. Discovery only — no final definition in this pass."
+    }
+  ]
+}

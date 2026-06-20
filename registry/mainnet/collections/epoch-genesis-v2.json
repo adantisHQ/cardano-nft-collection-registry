@@ -1,0 +1,150 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "epoch-genesis-v2",
+  "name": "Epoch Genesis v2",
+  "definition_status": "partial",
+  "policy_ids": [
+    "123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Epoch Genesis v2"
+    },
+    "description": {
+      "value": "Music NFT policy with dual metadata versions (v1 flat / v2 nested release)."
+    },
+    "category": {
+      "value": "media"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "song_title",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "source_paths": [
+        "$.release.song_title",
+        "$.song_title"
+      ],
+      "extraction": {
+        "strategy": "first_existing_path"
+      }
+    },
+    {
+      "canonical_trait": "artists",
+      "value_type": "array",
+      "category": "metadata",
+      "source": "cip25",
+      "source_paths": [
+        "$.release.artists",
+        "$.artists"
+      ],
+      "extraction": {
+        "strategy": "first_existing_path"
+      }
+    },
+    {
+      "canonical_trait": "genres",
+      "value_type": "array",
+      "category": "metadata",
+      "source": "cip25",
+      "source_paths": [
+        "$.release.genres",
+        "$.genres"
+      ],
+      "extraction": {
+        "strategy": "first_existing_path"
+      }
+    },
+    {
+      "canonical_trait": "copyright",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "source_paths": [
+        "$.release.copyright",
+        "$.copyright"
+      ],
+      "extraction": {
+        "strategy": "first_existing_path"
+      }
+    },
+    {
+      "canonical_trait": "release_type",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "source_paths": [
+        "$.release.release_type",
+        "$.release_type"
+      ],
+      "extraction": {
+        "strategy": "first_existing_path"
+      }
+    },
+    {
+      "canonical_trait": "music_metadata_version",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "music_metadata_version"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    },
+    "files": [
+      {
+        "label": "Audio Track",
+        "source_path": "$.files[0].src",
+        "media_type_path": "$.files[0].mediaType"
+      }
+    ]
+  },
+  "social_mappings": {
+    "x": {
+      "source_path": "$.links.twitter",
+      "source": "cip25"
+    },
+    "discord": {
+      "source_path": "$.links.discord",
+      "source": "cip25"
+    }
+  },
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "warning",
+      "message": "Policy mixes music_metadata v1 (flat) and v2 (release object) layouts; first_existing_path used per field."
+    }
+  ]
+}

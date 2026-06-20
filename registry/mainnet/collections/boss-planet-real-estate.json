@@ -1,0 +1,87 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "boss-planet-real-estate",
+  "name": "Boss Planet Real Estate",
+  "definition_status": "complete",
+  "policy_ids": [
+    "5a2cdc6e3aa9612fe4676672f443e7efd39c309d45e7919a4bf27750"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Boss Planet Real Estate"
+    },
+    "description": {
+      "value": "Boss Planet land parcels with district and coordinates."
+    },
+    "category": {
+      "value": "land"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "District",
+      "display_name": "District",
+      "value_type": "integer",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "District"
+      }
+    },
+    {
+      "canonical_trait": "XCoordinate",
+      "display_name": "XCoordinate",
+      "value_type": "integer",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "XCoordinate"
+      }
+    },
+    {
+      "canonical_trait": "YCoordinate",
+      "display_name": "YCoordinate",
+      "value_type": "integer",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "YCoordinate"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    }
+  },
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": []
+}

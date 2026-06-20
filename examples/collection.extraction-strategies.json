@@ -1,0 +1,74 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "extraction-strategies-example",
+  "name": "Extraction Strategies Example",
+  "definition_status": "partial",
+  "policy_ids": [
+    "deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef"
+  ],
+  "metadata_layout": {
+    "primary_standard": "mixed",
+    "metadata_root": "$"
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "Background",
+      "value_type": "enum",
+      "source_paths": ["$.attributes.Background", "$.attributes.background"],
+      "extraction": {
+        "strategy": "first_existing_path"
+      },
+      "normalization": {
+        "blue": "Blue"
+      },
+      "allowed_values": ["Blue", "Red", "Green"]
+    },
+    {
+      "canonical_trait": "Eyes",
+      "value_type": "string",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Attributes",
+        "key": "Eyes"
+      },
+      "notes": "The Mallard Order-style Attributes array"
+    },
+    {
+      "canonical_trait": "x",
+      "value_type": "string",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.-----Land Sale 1-----",
+        "key": "x"
+      },
+      "notes": "Pavia-style land coordinate section"
+    },
+    {
+      "canonical_trait": "type",
+      "value_type": "string",
+      "extraction": {
+        "strategy": "key_value_array",
+        "source_path": "$.properties",
+        "key": "type",
+        "key_field": "key",
+        "value_field": "value"
+      },
+      "notes": "DEADPXLZ-style properties array"
+    },
+    {
+      "canonical_trait": "Fur",
+      "value_type": "string",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Fur"
+      },
+      "notes": "Boss Cat / Clay Nation-style flat root traits"
+    }
+  ],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "Example collection demonstrating trait extraction strategies only."
+    }
+  ]
+}

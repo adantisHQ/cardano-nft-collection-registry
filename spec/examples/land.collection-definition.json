@@ -1,0 +1,107 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "land-parcel-spec",
+  "name": "Land Parcel Spec",
+  "definition_status": "complete",
+  "policy_ids": [
+    "f0300000000000000000000000000000000000000000000000000000"
+  ],
+  "identity": {
+    "display_name": { "value": "Land Parcel Spec" },
+    "description": {
+      "value": "Spec example: metaverse land with coordinates in array_singleton_object sections (Pavia-style)."
+    },
+    "category": { "value": "land" },
+    "tags": ["land", "metaverse", "spec-example"]
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    },
+    "custom": {
+      "description": "Parcel fields in -----Land Sale 1----- array of singleton objects."
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "land_type",
+      "display_name": "Land Type",
+      "value_type": "string",
+      "category": "other",
+      "required": true,
+      "source": "custom",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.-----Land Sale 1-----",
+        "key": "type"
+      }
+    },
+    {
+      "canonical_trait": "x",
+      "display_name": "X Coordinate",
+      "value_type": "string",
+      "category": "other",
+      "required": true,
+      "source": "custom",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.-----Land Sale 1-----",
+        "key": "x"
+      }
+    },
+    {
+      "canonical_trait": "y",
+      "display_name": "Y Coordinate",
+      "value_type": "string",
+      "category": "other",
+      "required": true,
+      "source": "custom",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.-----Land Sale 1-----",
+        "key": "y"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    }
+  },
+  "social_mappings": {},
+  "link_mappings": {
+    "website": {
+      "value": "https://metaverse.example.com",
+      "source": "registry"
+    }
+  },
+  "external_resources": [],
+  "license_info": {
+    "license": {
+      "value": "All rights reserved",
+      "source": "registry"
+    }
+  },
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown"
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "warning",
+      "message": "Image field may be a bare IPFS CID without ipfs:// prefix on some parcels."
+    }
+  ]
+}

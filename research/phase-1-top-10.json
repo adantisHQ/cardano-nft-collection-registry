@@ -1,0 +1,72 @@
+[
+  {
+    "name": "SpaceBudz",
+    "collection_id": "spacebudz",
+    "policy_ids": ["4523c5e21d409b81c95b45b0aea275b8ea1406e6cafea5583b9f8a5f"],
+    "sample_assets": [],
+    "notes": "Phase 1 selected collection. Sample assets pending lookup."
+  },
+  {
+    "name": "Clay Nation",
+    "collection_id": "clay-nation",
+    "policy_ids": ["40fa2aa67258b4ce7b5782f74831d46a84c59a0ff0c28262fab21728"],
+    "sample_assets": [],
+    "notes": "Phase 1 selected collection. Sample assets pending lookup."
+  },
+  {
+    "name": "Pavia",
+    "collection_id": "pavia",
+    "policy_ids": ["4bf184e01e0f163296ab253edd60774e2d34367d0e7b6cbc689b567d"],
+    "sample_assets": [],
+    "notes": "Phase 1 selected collection. Sample assets pending lookup."
+  },
+  {
+    "name": "ADA Handle",
+    "collection_id": "ada-handle",
+    "policy_ids": ["f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a"],
+    "sample_assets": [],
+    "notes": "Phase 1 selected collection. Sample assets pending lookup."
+  },
+  {
+    "name": "DEADPXLZ",
+    "collection_id": "deadpxlz",
+    "policy_ids": ["1ec85dcee27f2d90ec1f9a1e4ce74a667dc9be8b184463223f9c9601"],
+    "sample_assets": [],
+    "notes": "Phase 1 selected collection. Sample assets pending lookup."
+  },
+  {
+    "name": "Boss Cat Rocket Club",
+    "collection_id": "boss-cat-rocket-club",
+    "policy_ids": ["c364930bd612f42e14d156e1c5410511e77f64cab8f2367a9df544d1"],
+    "sample_assets": [],
+    "notes": "Phase 1 selected collection. Sample assets pending lookup."
+  },
+  {
+    "name": "Cornucopias Land",
+    "collection_id": "cornucopias-land-zones-1-3",
+    "policy_ids": ["07b39a8ead0ef1e3054e816a3b6910060beaf2210fded63fb90ce137"],
+    "sample_assets": [],
+    "notes": "Phase 1 selected collection. Sample assets pending lookup."
+  },
+  {
+    "name": "Cardano Summit 2021",
+    "collection_id": "cardano-summit-2021",
+    "policy_ids": ["0ad7f7a3281ba7c832344eb267594899147709b708176bc1084979f1"],
+    "sample_assets": [],
+    "notes": "Phase 1 selected collection. Sample assets pending lookup."
+  },
+  {
+    "name": "The Mallard Order",
+    "collection_id": "the-mallard-order",
+    "policy_ids": ["901ba6e9831b078e131a1cc403d6139af21bda255cea6c9f770f4834"],
+    "sample_assets": [],
+    "notes": "Phase 1 selected collection. Sample assets pending lookup."
+  },
+  {
+    "name": "Jellycubes",
+    "collection_id": "jellycubes",
+    "policy_ids": ["3ee441f40fe395a2e98eea1df7cf8816b0fca3d5d164893596ce306d"],
+    "sample_assets": [],
+    "notes": "Phase 1 selected collection. Sample assets pending lookup."
+  }
+]

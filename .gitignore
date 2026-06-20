@@ -1,0 +1,39 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+.DS_Store
+
+# Secrets — never publish
+.env
+.env.*
+!.env.example
+
+# Generated / local output (not versioned)
+tmp/
+output/
+csv/
+data/
+exports/
+
+# Research raw metadata dumps (not versioned)
+research/raw-samples/
+
+# ADAntis operational onboarding (local only — not part of public preview)
+ops/
+private/
+tools/adantis-private/
+
+# TapTools scrape workspace (CSVs, cache, venv)
+taptools-local/
+
+# Root-level onboarding manifests (safety net if recreated at repo root)
+collections-mainnet.batch-*.json
+collections-mainnet.heavy.json
+collections-mainnet.top100.json
+collections-mainnet.enriched.json
+collections-mainnet.*review.md
+collections-mainnet.batch-plan.md
+collections-mainnet.enrichment-report.md
+collections-mainnet.json
+collections-mainnet.example.json

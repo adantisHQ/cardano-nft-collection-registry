@@ -1,0 +1,92 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "boss-cat-rocket-parts",
+  "name": "Boss Cat Rocket Parts",
+  "definition_status": "complete",
+  "policy_ids": [
+    "761ed110b4040e153ffc20bd2203f2e7d57d610a0cf0eae6167e574d"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Boss Cat Rocket Parts"
+    },
+    "description": {
+      "value": "Companion component policy for Boss Cat Rocket Club; modular rocket part metadata."
+    },
+    "category": {
+      "value": "gaming"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "Type",
+      "display_name": "Type",
+      "value_type": "string",
+      "category": "component",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Type"
+      }
+    },
+    {
+      "canonical_trait": "Color",
+      "display_name": "Color",
+      "value_type": "string",
+      "category": "component",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Color"
+      }
+    },
+    {
+      "canonical_trait": "Model",
+      "display_name": "Model",
+      "value_type": "string",
+      "category": "component",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Model"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    }
+  },
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "Companion policy to Boss Cat Rocket Club (Phase 1). Policy index asset may have null metadata."
+    }
+  ]
+}

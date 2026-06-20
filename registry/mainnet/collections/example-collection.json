@@ -1,0 +1,31 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "example-collection",
+  "name": "Example Collection",
+  "definition_status": "minimal",
+  "policy_ids": [
+    "a1b2c3d4e5f678901234567890123456789012345678901234567890"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Example Collection"
+    },
+    "description": {
+      "value": "Canonical example collection definition shipped with the registry."
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "unknown",
+    "metadata_root": "$",
+    "asset_name_encoding": "unknown"
+  },
+  "trait_mappings": [],
+  "media_mappings": {},
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {},
+  "normalization_rules": [],
+  "indexing_notes": []
+}

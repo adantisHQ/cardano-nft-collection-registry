@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://registry.adantis.io/schemas/trait-mapping.schema.json",
+  "title": "TraitMapping",
+  "type": "object",
+  "required": ["canonical_trait", "value_type"],
+  "additionalProperties": false,
+  "properties": {
+    "canonical_trait": { "type": "string", "minLength": 1 },
+    "display_name": { "type": "string" },
+    "value_type": {
+      "type": "string",
+      "enum": [
+        "string",
+        "enum",
+        "integer",
+        "number",
+        "boolean",
+        "date",
+        "datetime",
+        "percentage",
+        "score",
+        "rank",
+        "object",
+        "array",
+        "unknown"
+      ]
+    },
+    "category": { "type": "string" },
+    "required": { "type": "boolean" },
+    "dynamic": { "type": "boolean" },
+    "source": {
+      "type": "string",
+      "enum": ["cip25", "cip68", "custom", "external", "registry"]
+    },
+    "source_paths": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "extraction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["strategy"],
+      "properties": {
+        "strategy": {
+          "type": "string",
+          "enum": [
+            "direct_path",
+            "first_existing_path",
+            "array_singleton_object",
+            "key_value_array",
+            "root_flat_keys"
+          ]
+        },
+        "source_path": { "type": "string" },
+        "key": { "type": "string" },
+        "key_field": { "type": "string" },
+        "value_field": { "type": "string" }
+      }
+    },
+    "normalization": { "type": "object", "additionalProperties": true },
+    "allowed_values": { "type": "array" },
+    "notes": { "type": "string" }
+  }
+}

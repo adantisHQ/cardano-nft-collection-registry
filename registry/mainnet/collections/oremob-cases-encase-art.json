@@ -1,0 +1,149 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "oremob-cases-encase-art",
+  "name": "OREMOB CASES by ENCASE.ART",
+  "definition_status": "complete",
+  "policy_ids": [
+    "9e6b0cf53e26c14f03eaafb45072c2800ba053b7ffa319fa29d42f5c"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "OREMOB CASES by ENCASE.ART"
+    },
+    "description": {
+      "value": "OREMOB case/component inventory metadata."
+    },
+    "category": {
+      "value": "gaming"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "Mob",
+      "display_name": "Mob",
+      "value_type": "string",
+      "category": "component",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Mob"
+      }
+    },
+    {
+      "canonical_trait": "Rank",
+      "display_name": "Rank",
+      "value_type": "string",
+      "category": "component",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Rank"
+      }
+    },
+    {
+      "canonical_trait": "Frame",
+      "display_name": "Frame",
+      "value_type": "string",
+      "category": "component",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Frame"
+      }
+    },
+    {
+      "canonical_trait": "Level",
+      "display_name": "Level",
+      "value_type": "string",
+      "category": "component",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Level"
+      }
+    },
+    {
+      "canonical_trait": "Gemstone",
+      "display_name": "Gemstone",
+      "value_type": "string",
+      "category": "component",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Gemstone"
+      }
+    },
+    {
+      "canonical_trait": "Core Essence",
+      "display_name": "Core Essence",
+      "value_type": "string",
+      "category": "component",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Core Essence"
+      }
+    },
+    {
+      "canonical_trait": "Manufacturer",
+      "display_name": "Manufacturer",
+      "value_type": "string",
+      "category": "component",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Manufacturer"
+      }
+    },
+    {
+      "canonical_trait": "Rarity Score",
+      "display_name": "Rarity Score",
+      "value_type": "string",
+      "category": "component",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Rarity Score"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    },
+    "files": [
+      {
+        "label": "Primary File",
+        "source_path": "$.files[0].src",
+        "media_type_path": "$.files[0].mediaType"
+      }
+    ]
+  },
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": []
+}

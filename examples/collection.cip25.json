@@ -1,0 +1,114 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "classic-cip25-art",
+  "name": "Classic CIP-25 Art",
+  "definition_status": "partial",
+  "policy_ids": [
+    "0123456789abcdef0123456789abcdef0123456789abcdef0123456789"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Classic CIP-25 Art"
+    },
+    "description": {
+      "value": "Legacy CIP-25 collection with on-chain label metadata and IPFS-hosted JSON."
+    },
+    "category": {
+      "value": "art"
+    },
+    "tags": ["art", "cip25", "legacy"]
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "Artist",
+      "display_name": "Artist",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "source_paths": ["$.attributes.Artist"]
+    },
+    {
+      "canonical_trait": "Medium",
+      "display_name": "Medium",
+      "value_type": "enum",
+      "category": "visual",
+      "source": "cip25",
+      "source_paths": ["$.attributes.Medium"],
+      "allowed_values": ["Oil", "Digital", "Watercolor"]
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    },
+    "logo": {
+      "value": "https://example.com/classic-cip25/logo.png",
+      "source": "registry"
+    },
+    "files": [
+      {
+        "label": "Primary Media File",
+        "source_path": "$.files[0].src",
+        "media_type_path": "$.files[0].mediaType"
+      }
+    ]
+  },
+  "social_mappings": {
+    "discord": {
+      "value": "https://discord.gg/example",
+      "source": "registry"
+    }
+  },
+  "link_mappings": {
+    "website": {
+      "value": "https://example.com/classic-cip25",
+      "source": "registry"
+    },
+    "explorer": {
+      "value": "https://cardanoscan.io/tokenPolicy/0123456789abcdef0123456789abcdef0123456789abcdef0123456789",
+      "source": "registry"
+    }
+  },
+  "external_resources": [],
+  "license_info": {
+    "license": {
+      "source_path": "$.license",
+      "source": "cip25"
+    },
+    "license_url": {
+      "source_path": "$.license_url",
+      "source": "cip25"
+    }
+  },
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown"
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "721 metadata version varies between 1.0 and 2.0 across mint batches."
+    },
+    {
+      "severity": "warning",
+      "message": "Image field may be ipfs:// or https:// depending on mint era."
+    }
+  ]
+}

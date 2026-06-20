@@ -1,0 +1,36 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "earthnode",
+  "name": "EarthNode",
+  "definition_status": "partial",
+  "policy_ids": [
+    "b97859c71e4e73af3ae83c30a3172c434c43041f6ff19c297fb76094"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "EarthNode"
+    },
+    "description": {
+      "value": ""
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "unknown",
+    "metadata_root": "$",
+    "asset_name_encoding": "unknown"
+  },
+  "trait_mappings": [],
+  "media_mappings": {},
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {},
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "Phase 3A Top-100 include_now (TapTools rank 5). Type: land. Discovery only — no final definition in this pass."
+    }
+  ]
+}

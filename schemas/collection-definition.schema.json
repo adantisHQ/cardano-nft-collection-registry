@@ -1,0 +1,230 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://registry.adantis.io/schemas/collection-definition.schema.json",
+  "title": "CollectionDefinition",
+  "type": "object",
+  "required": [
+    "registry_version",
+    "collection_id",
+    "name",
+    "definition_status",
+    "policy_ids"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "registry_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "collection_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "definition_status": {
+      "type": "string",
+      "enum": ["minimal", "partial", "complete", "inferred", "broken", "unknown"]
+    },
+    "policy_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^[0-9a-fA-F]{56}$"
+      }
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "display_name": { "$ref": "sourced-value.schema.json" },
+        "description": { "$ref": "sourced-value.schema.json" },
+        "category": { "$ref": "sourced-value.schema.json" },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "metadata_layout": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "primary_standard": {
+          "type": "string",
+          "enum": ["cip25", "cip68", "custom", "mixed", "unknown"]
+        },
+        "metadata_root": { "type": "string" },
+        "asset_name_encoding": {
+          "type": "string",
+          "enum": ["utf8", "hex", "mixed", "unknown"]
+        },
+        "cip25": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "label": { "type": "string" },
+            "policy_path": { "type": "string" },
+            "asset_metadata_path": { "type": "string" }
+          }
+        },
+        "cip68": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "enabled": { "type": "boolean" },
+            "datum_path": { "type": ["string", "null"] },
+            "reference_token_pattern": { "type": ["string", "null"] }
+          }
+        },
+        "custom": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "description": { "type": "string" }
+          }
+        }
+      }
+    },
+    "trait_mappings": {
+      "type": "array",
+      "items": { "$ref": "trait-mapping.schema.json" }
+    },
+    "media_mappings": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "image": { "$ref": "sourced-value.schema.json" },
+        "thumbnail": { "$ref": "sourced-value.schema.json" },
+        "banner": { "$ref": "sourced-value.schema.json" },
+        "logo": { "$ref": "sourced-value.schema.json" },
+        "animation": { "$ref": "sourced-value.schema.json" },
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "label": { "type": "string" },
+              "source_path": { "type": "string" },
+              "media_type_path": { "type": "string" },
+              "value": {},
+              "source": {
+                "type": "string",
+                "enum": ["registry", "cip25", "cip68", "custom", "external"]
+              },
+              "notes": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "social_mappings": {
+      "type": "object",
+      "additionalProperties": { "$ref": "sourced-value.schema.json" }
+    },
+    "link_mappings": {
+      "type": "object",
+      "additionalProperties": { "$ref": "sourced-value.schema.json" }
+    },
+    "external_resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "uri"],
+        "additionalProperties": false,
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "metadata_manifest",
+              "trait_manifest",
+              "rarity_manifest",
+              "media_archive",
+              "license",
+              "other"
+            ]
+          },
+          "label": { "type": "string" },
+          "uri": { "type": "string", "minLength": 1 },
+          "hash": { "type": ["string", "null"] },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "license_info": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "license": { "$ref": "sourced-value.schema.json" },
+        "license_url": { "$ref": "sourced-value.schema.json" },
+        "commercial_use": { "$ref": "sourced-value.schema.json" },
+        "derivative_use": { "$ref": "sourced-value.schema.json" }
+      }
+    },
+    "royalty_info": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "has_royalties": { "type": "boolean" },
+        "source": {
+          "type": "string",
+          "enum": ["cip27", "royalty_token", "marketplace", "registry", "unknown"]
+        },
+        "royalty_percentage": { "$ref": "sourced-value.schema.json" },
+        "royalty_address": { "$ref": "sourced-value.schema.json" },
+        "royalty_token": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "policy_id": {
+              "type": "string",
+              "pattern": "^[0-9a-fA-F]{56}$"
+            },
+            "asset_name": { "type": "string" }
+          }
+        },
+        "notes": { "type": "string" }
+      }
+    },
+    "normalization_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "from", "to"],
+        "additionalProperties": false,
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "trait_name",
+              "trait_value",
+              "media_uri",
+              "asset_name",
+              "metadata_field"
+            ]
+          },
+          "from": { "type": "string", "minLength": 1 },
+          "to": { "type": "string", "minLength": 1 },
+          "scope": {
+            "type": "string",
+            "enum": ["collection", "trait", "media", "global"]
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "indexing_notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["severity", "message"],
+        "additionalProperties": false,
+        "properties": {
+          "severity": {
+            "type": "string",
+            "enum": ["info", "warning", "critical"]
+          },
+          "message": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

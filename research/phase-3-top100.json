@@ -1,0 +1,1959 @@
+{
+  "generated": "2026-06-09",
+  "source": "csv/collections_top1000_filter_owners425_sales10.csv",
+  "selection_method": "Lowest 100 TapTools rank values from filtered CSV (1002 rows)",
+  "baseline_excluded": {
+    "phase_1_policies": 10,
+    "phase_2_policies": 20,
+    "total_audited_policies": 30
+  },
+  "summary": {
+    "total_top100_rows": 100,
+    "excluded_unknown_or_broken": 0,
+    "excluded_already_audited": 19,
+    "include_now": 23,
+    "include_later": 58,
+    "exclude": 19,
+    "valid_non_audited_in_top100": 81,
+    "valid_collection_count": 81,
+    "note": "Only 81 valid non-excluded collections exist in Top-100 after automatic exclusions (target was up to 100)."
+  },
+  "category_distribution": {
+    "gaming": 24,
+    "land": 10,
+    "mixed": 49,
+    "utility": 1,
+    "media": 1,
+    "pfp": 9,
+    "identity": 1,
+    "membership": 1,
+    "event": 3,
+    "art": 1
+  },
+  "triage_distribution": {
+    "exclude": 19,
+    "include_now": 23,
+    "include_later": 58
+  },
+  "exclude_reason_distribution": {
+    "already_onboarded": 19
+  },
+  "collections": [
+    {
+      "rank": 5,
+      "name": "EarthNode",
+      "collection_id": "earthnode",
+      "policy_ids": [
+        "b97859c71e4e73af3ae83c30a3172c434c43041f6ff19c297fb76094"
+      ],
+      "page": 1,
+      "floor_price": 97949,
+      "mcap": 97948980,
+      "sales": 354,
+      "owners": 504,
+      "url": "https://www.taptools.io/charts/nft/b97859c71e4e73af3ae83c30a3172c434c43041f6ff19c297fb76094",
+      "type": "land",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 5). Type: land. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 18,
+      "name": "Tappy by TapTools",
+      "collection_id": "tappy-by-taptools",
+      "policy_ids": [
+        "e3ff4ab89245ede61b3e2beab0443dbcc7ea8ca2c017478e4e8990e2"
+      ],
+      "page": 1,
+      "floor_price": 395,
+      "mcap": 2194225,
+      "sales": 11065,
+      "owners": 1809,
+      "url": "https://www.taptools.io/charts/nft/e3ff4ab89245ede61b3e2beab0443dbcc7ea8ca2c017478e4e8990e2",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 18). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 19,
+      "name": "Toolheads",
+      "collection_id": "toolheads",
+      "policy_ids": [
+        "285c0b8e91ba323da4ca083c9db837e111dafbf3143ece4d03eba8f4"
+      ],
+      "page": 1,
+      "floor_price": 70,
+      "mcap": 462000,
+      "sales": 11977,
+      "owners": 863,
+      "url": "https://www.taptools.io/charts/nft/285c0b8e91ba323da4ca083c9db837e111dafbf3143ece4d03eba8f4",
+      "type": "gaming",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 19). Type: gaming. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 20,
+      "name": "HOSKY C(ash grab)NFT",
+      "collection_id": "hosky-c-ash-grab-nft",
+      "policy_ids": [
+        "a5bb0e5bb275a573d744a021f9b3bff73595468e002755b447e01559"
+      ],
+      "page": 1,
+      "floor_price": 8,
+      "mcap": 3363360,
+      "sales": 158271,
+      "owners": 17652,
+      "url": "https://www.taptools.io/charts/nft/a5bb0e5bb275a573d744a021f9b3bff73595468e002755b447e01559",
+      "type": "utility",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 20). Type: utility. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 21,
+      "name": "Goofy Gophers Mining Club",
+      "collection_id": "goofy-gophers-mining-club",
+      "policy_ids": [
+        "075bc45055274a362eb5d0d86090f39ca269b5bd22abbce99d3e4a81"
+      ],
+      "page": 1,
+      "floor_price": 82,
+      "mcap": 726648,
+      "sales": 9346,
+      "owners": 742,
+      "url": "https://www.taptools.io/charts/nft/075bc45055274a362eb5d0d86090f39ca269b5bd22abbce99d3e4a81",
+      "type": "gaming",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 21). Type: gaming. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 22,
+      "name": "Dead Rabbit Resurrection Society",
+      "collection_id": "dead-rabbit-resurrection-society",
+      "policy_ids": [
+        "de2340edc45629456bf695200e8ea32f948a653b21ada10bc6f0c554"
+      ],
+      "page": 1,
+      "floor_price": 25,
+      "mcap": 150000,
+      "sales": 15161,
+      "owners": 1526,
+      "url": "https://www.taptools.io/charts/nft/de2340edc45629456bf695200e8ea32f948a653b21ada10bc6f0c554",
+      "type": "gaming",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 22). Type: gaming. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 25,
+      "name": "Derp Birds",
+      "collection_id": "derp-birds",
+      "policy_ids": [
+        "e74862a09d17a9cb03174a6bd5fa305b8684475c4c36021591c606e0"
+      ],
+      "page": 1,
+      "floor_price": 45,
+      "mcap": 259420,
+      "sales": 21280,
+      "owners": 1022,
+      "url": "https://www.taptools.io/charts/nft/e74862a09d17a9cb03174a6bd5fa305b8684475c4c36021591c606e0",
+      "type": "pfp",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "ecosystem": "derp-birds",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 25). Type: pfp. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 26,
+      "name": "Derp Birds (legacy collection)",
+      "collection_id": "derp-birds-legacy-collection",
+      "policy_ids": [
+        "b92f6473f18d4b78733d022fd89f3cacc1484fab6eddfd3c5d4b9494"
+      ],
+      "page": 1,
+      "floor_price": 94,
+      "mcap": 940000,
+      "sales": 21280,
+      "owners": 1370,
+      "url": "https://www.taptools.io/charts/nft/b92f6473f18d4b78733d022fd89f3cacc1484fab6eddfd3c5d4b9494",
+      "type": "pfp",
+      "triage_status": "include_later",
+      "reason_code": "ecosystem_sibling",
+      "ecosystem": "derp-birds",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 26). Type: pfp. Deferred: ecosystem sibling (derp-birds); prioritize first policy in rank order."
+    },
+    {
+      "rank": 27,
+      "name": "Alley Katz",
+      "collection_id": "alley-katz",
+      "policy_ids": [
+        "d34743543ccbda22bb948400a4a919b7b54e82123030702e38cc62b6"
+      ],
+      "page": 1,
+      "floor_price": 12,
+      "mcap": 119988,
+      "sales": 17285,
+      "owners": 2063,
+      "url": "https://www.taptools.io/charts/nft/d34743543ccbda22bb948400a4a919b7b54e82123030702e38cc62b6",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 27). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 28,
+      "name": "Aquafarmers",
+      "collection_id": "aquafarmers",
+      "policy_ids": [
+        "86ec26a91051e4d42df00b023202e177a0027dca4294a20a0326a116"
+      ],
+      "page": 1,
+      "floor_price": 34,
+      "mcap": 340000,
+      "sales": 12298,
+      "owners": 3417,
+      "url": "https://www.taptools.io/charts/nft/86ec26a91051e4d42df00b023202e177a0027dca4294a20a0326a116",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 28). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 29,
+      "name": "Cornucopias Custom Dome Sale",
+      "collection_id": "cornucopias-custom-dome-sale",
+      "policy_ids": [
+        "9cce4bbd9f6e06ef9d67b95ad8511532b4569d290d1575fcbac48732"
+      ],
+      "page": 1,
+      "floor_price": 99,
+      "mcap": 594000,
+      "sales": 4747,
+      "owners": 2424,
+      "url": "https://www.taptools.io/charts/nft/9cce4bbd9f6e06ef9d67b95ad8511532b4569d290d1575fcbac48732",
+      "type": "gaming",
+      "triage_status": "include_later",
+      "reason_code": "ecosystem_sibling",
+      "ecosystem": "cornucopias",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 29). Type: gaming. Deferred: ecosystem sibling (cornucopias); prioritize first policy in rank order."
+    },
+    {
+      "rank": 30,
+      "name": "Mocossi - ITOs",
+      "collection_id": "mocossi-itos",
+      "policy_ids": [
+        "5d5b205252b9f5016422d0eace869d7fd45074a4ea4b6c1dc78d1705"
+      ],
+      "page": 1,
+      "floor_price": 11,
+      "mcap": 110000,
+      "sales": 18915,
+      "owners": 2186,
+      "url": "https://www.taptools.io/charts/nft/5d5b205252b9f5016422d0eace869d7fd45074a4ea4b6c1dc78d1705",
+      "type": "mixed",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "ecosystem": "mocossi",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 30). Type: mixed. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 31,
+      "name": "Cornucopias Bubblejett Sprinter 2022",
+      "collection_id": "cornucopias-bubblejett-sprinter-2022",
+      "policy_ids": [
+        "e282271ec9251ba23fb123b0f53618b35cf5a6cde4170c003a0ebf13"
+      ],
+      "page": 1,
+      "floor_price": 33,
+      "mcap": 396000,
+      "sales": 16418,
+      "owners": 5191,
+      "url": "https://www.taptools.io/charts/nft/e282271ec9251ba23fb123b0f53618b35cf5a6cde4170c003a0ebf13",
+      "type": "gaming",
+      "triage_status": "include_later",
+      "reason_code": "ecosystem_sibling",
+      "ecosystem": "cornucopias",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 31). Type: gaming. Deferred: ecosystem sibling (cornucopias); prioritize first policy in rank order."
+    },
+    {
+      "rank": 32,
+      "name": "Snekkies",
+      "collection_id": "snekkies",
+      "policy_ids": [
+        "b558ea5ecfa2a6e9701dab150248e94104402f789c090426eb60eb60"
+      ],
+      "page": 1,
+      "floor_price": 225,
+      "mcap": 1749825,
+      "sales": 13185,
+      "owners": 1676,
+      "url": "https://www.taptools.io/charts/nft/b558ea5ecfa2a6e9701dab150248e94104402f789c090426eb60eb60",
+      "type": "pfp",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 32). Type: pfp. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 34,
+      "name": "DiscoSolaris",
+      "collection_id": "discosolaris",
+      "policy_ids": [
+        "d0112837f8f856b2ca14f69b375bc394e73d146fdadcc993bb993779"
+      ],
+      "page": 1,
+      "floor_price": 47,
+      "mcap": 271519,
+      "sales": 13106,
+      "owners": 1652,
+      "url": "https://www.taptools.io/charts/nft/d0112837f8f856b2ca14f69b375bc394e73d146fdadcc993bb993779",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 34). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 35,
+      "name": "Cardano Crocs Club",
+      "collection_id": "cardano-crocs-club",
+      "policy_ids": [
+        "aa19d5f5ae9b6c93c8e278851194553ddd4789d77f86d3ad2f7480d8"
+      ],
+      "page": 1,
+      "floor_price": 298,
+      "mcap": 2569523,
+      "sales": 9538,
+      "owners": 1174,
+      "url": "https://www.taptools.io/charts/nft/aa19d5f5ae9b6c93c8e278851194553ddd4789d77f86d3ad2f7480d8",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 35). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 36,
+      "name": "Old Money",
+      "collection_id": "old-money",
+      "policy_ids": [
+        "3bcc312ebe7cd9281ab3e3d641bf70f207012e539b0e6e7c3f1560d7"
+      ],
+      "page": 1,
+      "floor_price": 47,
+      "mcap": 352500,
+      "sales": 7198,
+      "owners": 1033,
+      "url": "https://www.taptools.io/charts/nft/3bcc312ebe7cd9281ab3e3d641bf70f207012e539b0e6e7c3f1560d7",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 36). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 37,
+      "name": "OMEN",
+      "collection_id": "omen",
+      "policy_ids": [
+        "da286f15e0de865e3d50fec6fa0484d7e2309671dc4ba8ce6bdd122b"
+      ],
+      "page": 1,
+      "floor_price": 49,
+      "mcap": 490000,
+      "sales": 11640,
+      "owners": 1353,
+      "url": "https://www.taptools.io/charts/nft/da286f15e0de865e3d50fec6fa0484d7e2309671dc4ba8ce6bdd122b",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 37). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 38,
+      "name": "Zombie Chains",
+      "collection_id": "zombie-chains",
+      "policy_ids": [
+        "96580bbc4fe27ac0d127db3f8a0dc698c58d303d8cae870f5771f336"
+      ],
+      "page": 1,
+      "floor_price": 39,
+      "mcap": 390000,
+      "sales": 14879,
+      "owners": 2170,
+      "url": "https://www.taptools.io/charts/nft/96580bbc4fe27ac0d127db3f8a0dc698c58d303d8cae870f5771f336",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 38). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 39,
+      "name": "Raccoon Syndicate",
+      "collection_id": "raccoon-syndicate",
+      "policy_ids": [
+        "59142df7dfea56a5b76b842c206fc7bd844b43a2d10f5eb05f695dcb"
+      ],
+      "page": 1,
+      "floor_price": 10,
+      "mcap": 100390,
+      "sales": 13177,
+      "owners": 980,
+      "url": "https://www.taptools.io/charts/nft/59142df7dfea56a5b76b842c206fc7bd844b43a2d10f5eb05f695dcb",
+      "type": "pfp",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 39). Type: pfp. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 40,
+      "name": "Salty Seagulls Society",
+      "collection_id": "salty-seagulls-society",
+      "policy_ids": [
+        "5329a9b87459e1df8e86ce56bae4b3770862c0969011e6faf474b65f"
+      ],
+      "page": 1,
+      "floor_price": 14,
+      "mcap": 105829,
+      "sales": 16022,
+      "owners": 1412,
+      "url": "https://www.taptools.io/charts/nft/5329a9b87459e1df8e86ce56bae4b3770862c0969011e6faf474b65f",
+      "type": "gaming",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 40). Type: gaming. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 41,
+      "name": "Introverts",
+      "collection_id": "introverts",
+      "policy_ids": [
+        "d79181749db228d10c98501a7e1728585780bcf133b7b3df953a9017"
+      ],
+      "page": 1,
+      "floor_price": 50,
+      "mcap": 342900,
+      "sales": 16008,
+      "owners": 1249,
+      "url": "https://www.taptools.io/charts/nft/d79181749db228d10c98501a7e1728585780bcf133b7b3df953a9017",
+      "type": "membership",
+      "triage_status": "include_later",
+      "reason_code": "ecosystem_sibling",
+      "ecosystem": "introverts",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 41). Type: membership. Deferred: ecosystem sibling (introverts); prioritize first policy in rank order."
+    },
+    {
+      "rank": 42,
+      "name": "GOAT Tribe",
+      "collection_id": "goat-tribe",
+      "policy_ids": [
+        "c281975562f394761771f13f599881517fa8455946e7e30454de22da"
+      ],
+      "page": 1,
+      "floor_price": 48,
+      "mcap": 479592,
+      "sales": 14088,
+      "owners": 2500,
+      "url": "https://www.taptools.io/charts/nft/c281975562f394761771f13f599881517fa8455946e7e30454de22da",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 42). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 44,
+      "name": "EquineNFT Pioneer Horses",
+      "collection_id": "equinenft-pioneer-horses",
+      "policy_ids": [
+        "30ed3d95db1d6bb2c12fc5228a2986eab4553f192a12a4607780e15b"
+      ],
+      "page": 1,
+      "floor_price": 32,
+      "mcap": 452000,
+      "sales": 10472,
+      "owners": 3312,
+      "url": "https://www.taptools.io/charts/nft/30ed3d95db1d6bb2c12fc5228a2986eab4553f192a12a4607780e15b",
+      "type": "gaming",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "ecosystem": "equine-pioneer",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 44). Type: gaming. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 45,
+      "name": "unsigned_algorithms",
+      "collection_id": "unsigned-algorithms",
+      "policy_ids": [
+        "0e14267a8020229adc0184dd25fa3174c3f7d6caadcb4425c70e7c04"
+      ],
+      "page": 1,
+      "floor_price": 35,
+      "mcap": 1089165,
+      "sales": 6029,
+      "owners": 1694,
+      "url": "https://www.taptools.io/charts/nft/0e14267a8020229adc0184dd25fa3174c3f7d6caadcb4425c70e7c04",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 45). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 46,
+      "name": "HungryCow",
+      "collection_id": "hungrycow",
+      "policy_ids": [
+        "11ebbfbfd62985cbae7330b95488b9dcf17ecb5e728442031362ad81"
+      ],
+      "page": 1,
+      "floor_price": 8,
+      "mcap": 81641,
+      "sales": 17798,
+      "owners": 2723,
+      "url": "https://www.taptools.io/charts/nft/11ebbfbfd62985cbae7330b95488b9dcf17ecb5e728442031362ad81",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 46). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 47,
+      "name": "The Mandrillz",
+      "collection_id": "the-mandrillz",
+      "policy_ids": [
+        "3f75c1332868430e28e156f6309836de8df19b620ab604c166741836"
+      ],
+      "page": 1,
+      "floor_price": 8,
+      "mcap": 71104,
+      "sales": 18151,
+      "owners": 2233,
+      "url": "https://www.taptools.io/charts/nft/3f75c1332868430e28e156f6309836de8df19b620ab604c166741836",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 47). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 48,
+      "name": "Clumsy Ghosts",
+      "collection_id": "clumsy-ghosts",
+      "policy_ids": [
+        "b000e9f3994de3226577b4d61280994e53c07948c8839d628f4a425a"
+      ],
+      "page": 1,
+      "floor_price": 15,
+      "mcap": 150000,
+      "sales": 14957,
+      "owners": 2629,
+      "url": "https://www.taptools.io/charts/nft/b000e9f3994de3226577b4d61280994e53c07948c8839d628f4a425a",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 48). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 49,
+      "name": "House Of Titans",
+      "collection_id": "house-of-titans",
+      "policy_ids": [
+        "53d6297f4ede5cd3bfed7281b73fad3dac8dc86a950f7454d84c16ad"
+      ],
+      "page": 1,
+      "floor_price": 159,
+      "mcap": 1033500,
+      "sales": 12505,
+      "owners": 663,
+      "url": "https://www.taptools.io/charts/nft/53d6297f4ede5cd3bfed7281b73fad3dac8dc86a950f7454d84c16ad",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 49). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 50,
+      "name": "KWIC - Keyboard Warriors Internet Cafe",
+      "collection_id": "kwic-keyboard-warriors-internet-cafe",
+      "policy_ids": [
+        "c72d0438330ed1346f4437fcc1c263ea38e933c1124c8d0f2abc6312"
+      ],
+      "page": 1,
+      "floor_price": 35,
+      "mcap": 308359,
+      "sales": 15089,
+      "owners": 1389,
+      "url": "https://www.taptools.io/charts/nft/c72d0438330ed1346f4437fcc1c263ea38e933c1124c8d0f2abc6312",
+      "type": "gaming",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 50). Type: gaming. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 51,
+      "name": "Boss Cat Alien Club",
+      "collection_id": "boss-cat-alien-club",
+      "policy_ids": [
+        "6a9f96ab2a2dab4d5563ab44a9a7aa173292f6c67c503c00013c5c8e"
+      ],
+      "page": 2,
+      "floor_price": 100,
+      "mcap": 300000,
+      "sales": 2064,
+      "owners": 1386,
+      "url": "https://www.taptools.io/charts/nft/6a9f96ab2a2dab4d5563ab44a9a7aa173292f6c67c503c00013c5c8e",
+      "type": "pfp",
+      "triage_status": "include_later",
+      "reason_code": "ecosystem_sibling",
+      "ecosystem": "boss-cat",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 51). Type: pfp. Deferred: ecosystem sibling (boss-cat); prioritize first policy in rank order."
+    },
+    {
+      "rank": 52,
+      "name": "Citizens of The Ape Society - COTAS",
+      "collection_id": "citizens-of-the-ape-society-cotas",
+      "policy_ids": [
+        "fca746f58adf9f3da13b7227e5e2c6052f376447473f4d49f8004195"
+      ],
+      "page": 2,
+      "floor_price": 4,
+      "mcap": 40000,
+      "sales": 11259,
+      "owners": 1781,
+      "url": "https://www.taptools.io/charts/nft/fca746f58adf9f3da13b7227e5e2c6052f376447473f4d49f8004195",
+      "type": "gaming",
+      "triage_status": "include_later",
+      "reason_code": "ecosystem_sibling",
+      "ecosystem": "ape-society",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 52). Type: gaming. Deferred: ecosystem sibling (ape-society); prioritize first policy in rank order."
+    },
+    {
+      "rank": 53,
+      "name": "Mad Dog Car Club",
+      "collection_id": "mad-dog-car-club",
+      "policy_ids": [
+        "7e605894cdcbe8d1933f0a8760d93bd121aca583cf21ad1c25e51fd3"
+      ],
+      "page": 2,
+      "floor_price": 5,
+      "mcap": 49995,
+      "sales": 14875,
+      "owners": 1795,
+      "url": "https://www.taptools.io/charts/nft/7e605894cdcbe8d1933f0a8760d93bd121aca583cf21ad1c25e51fd3",
+      "type": "pfp",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 53). Type: pfp. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 54,
+      "name": "Ghostchain",
+      "collection_id": "ghostchain",
+      "policy_ids": [
+        "8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54"
+      ],
+      "page": 2,
+      "floor_price": 13,
+      "mcap": 132653,
+      "sales": 9369,
+      "owners": 938,
+      "url": "https://www.taptools.io/charts/nft/8021c0ab3285cc3cfff2b7e61e96ece565fb37279b67666741587b54",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 54). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 55,
+      "name": "Smooth Yeti Mountain Club",
+      "collection_id": "smooth-yeti-mountain-club",
+      "policy_ids": [
+        "eaa972045049185981aca9f4aaad38bc307776c593e4a849d3802a87"
+      ],
+      "page": 2,
+      "floor_price": 5,
+      "mcap": 37500,
+      "sales": 16644,
+      "owners": 1602,
+      "url": "https://www.taptools.io/charts/nft/eaa972045049185981aca9f4aaad38bc307776c593e4a849d3802a87",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 55). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 56,
+      "name": "Tavern Squad",
+      "collection_id": "tavern-squad",
+      "policy_ids": [
+        "2d01b3496fd22b1a61e6227c27250225b1186e5ebae7360b1fc5392c"
+      ],
+      "page": 2,
+      "floor_price": 79,
+      "mcap": 790000,
+      "sales": 17980,
+      "owners": 1297,
+      "url": "https://www.taptools.io/charts/nft/2d01b3496fd22b1a61e6227c27250225b1186e5ebae7360b1fc5392c",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 56). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 57,
+      "name": "Boss Planet Vox Cat",
+      "collection_id": "boss-planet-vox-cat",
+      "policy_ids": [
+        "a8c68ff1e130c79cd0cad73357670b3b4fd11a0708319a99be14e860"
+      ],
+      "page": 2,
+      "floor_price": 9,
+      "mcap": 89991,
+      "sales": 6385,
+      "owners": 3285,
+      "url": "https://www.taptools.io/charts/nft/a8c68ff1e130c79cd0cad73357670b3b4fd11a0708319a99be14e860",
+      "type": "land",
+      "triage_status": "include_later",
+      "reason_code": "ecosystem_sibling",
+      "ecosystem": "boss-cat",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 57). Type: land. Deferred: ecosystem sibling (boss-cat); prioritize first policy in rank order."
+    },
+    {
+      "rank": 58,
+      "name": "Radioactive Crocs Club",
+      "collection_id": "radioactive-crocs-club",
+      "policy_ids": [
+        "49b4109aa40548dd55dd106ce58003c9601da016992cc276ed880cd0"
+      ],
+      "page": 2,
+      "floor_price": 109,
+      "mcap": 1087384,
+      "sales": 13487,
+      "owners": 1181,
+      "url": "https://www.taptools.io/charts/nft/49b4109aa40548dd55dd106ce58003c9601da016992cc276ed880cd0",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 58). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 59,
+      "name": "Derp Birds - Outposts",
+      "collection_id": "derp-birds-outposts",
+      "policy_ids": [
+        "a2e719d70b9d71636aa825e71c11ca508ecf98eec87182b0e526d7c5"
+      ],
+      "page": 2,
+      "floor_price": 35,
+      "mcap": 277551,
+      "sales": 5745,
+      "owners": 748,
+      "url": "https://www.taptools.io/charts/nft/a2e719d70b9d71636aa825e71c11ca508ecf98eec87182b0e526d7c5",
+      "type": "pfp",
+      "triage_status": "include_later",
+      "reason_code": "ecosystem_sibling",
+      "ecosystem": "derp-birds",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 59). Type: pfp. Deferred: ecosystem sibling (derp-birds); prioritize first policy in rank order."
+    },
+    {
+      "rank": 60,
+      "name": "ADA Invadaz Season 1 - Planet Zaguro",
+      "collection_id": "ada-invadaz-season-1-planet-zaguro",
+      "policy_ids": [
+        "2d503a06893ced6641243f987403b2e094d41dc46153286c9f49b2e5"
+      ],
+      "page": 2,
+      "floor_price": 12,
+      "mcap": 42000,
+      "sales": 6894,
+      "owners": 839,
+      "url": "https://www.taptools.io/charts/nft/2d503a06893ced6641243f987403b2e094d41dc46153286c9f49b2e5",
+      "type": "land",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 60). Type: land. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 61,
+      "name": "Virtua - Cardano Island Land Deeds",
+      "collection_id": "virtua-cardano-island-land-deeds",
+      "policy_ids": [
+        "347f991d4b306919e3e7b01f1cdececa06c2e493a21a0da0931d033b"
+      ],
+      "page": 2,
+      "floor_price": 35,
+      "mcap": 53025,
+      "sales": 2571,
+      "owners": 738,
+      "url": "https://www.taptools.io/charts/nft/347f991d4b306919e3e7b01f1cdececa06c2e493a21a0da0931d033b",
+      "type": "land",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 61). Type: land. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 62,
+      "name": "BabyAlienClub",
+      "collection_id": "babyalienclub",
+      "policy_ids": [
+        "15509d4cb60f066ca4c7e982d764d6ceb4324cb33776d1711da1beee"
+      ],
+      "page": 2,
+      "floor_price": 11,
+      "mcap": 109879,
+      "sales": 16798,
+      "owners": 3882,
+      "url": "https://www.taptools.io/charts/nft/15509d4cb60f066ca4c7e982d764d6ceb4324cb33776d1711da1beee",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 62). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 63,
+      "name": "ADA Inmates",
+      "collection_id": "ada-inmates",
+      "policy_ids": [
+        "65138e35d33281e6f8d39988f8c94754a606297ee43fb2f68c36cca2"
+      ],
+      "page": 2,
+      "floor_price": 33,
+      "mcap": 165000,
+      "sales": 7589,
+      "owners": 538,
+      "url": "https://www.taptools.io/charts/nft/65138e35d33281e6f8d39988f8c94754a606297ee43fb2f68c36cca2",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 63). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 64,
+      "name": "CardanoBits",
+      "collection_id": "cardanobits",
+      "policy_ids": [
+        "1131301ad4b3cb7deaddbc8f03f77189082a5738c0167e1772233097"
+      ],
+      "page": 2,
+      "floor_price": 63,
+      "mcap": 630000,
+      "sales": 7525,
+      "owners": 2614,
+      "url": "https://www.taptools.io/charts/nft/1131301ad4b3cb7deaddbc8f03f77189082a5738c0167e1772233097",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 64). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 65,
+      "name": "CryptoDino",
+      "collection_id": "cryptodino",
+      "policy_ids": [
+        "7a5a5c3757d33c2b2ff0b09405676e61f93d28b5d12805dd3320e31f"
+      ],
+      "page": 2,
+      "floor_price": 4,
+      "mcap": 40000,
+      "sales": 14256,
+      "owners": 2964,
+      "url": "https://www.taptools.io/charts/nft/7a5a5c3757d33c2b2ff0b09405676e61f93d28b5d12805dd3320e31f",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 65). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 66,
+      "name": "Bright Palz",
+      "collection_id": "bright-palz",
+      "policy_ids": [
+        "5a46271a9b32a4517ced20be4ba1f184c2f91b1a5dd480ab639eee57"
+      ],
+      "page": 2,
+      "floor_price": 5,
+      "mcap": 44440,
+      "sales": 15506,
+      "owners": 3070,
+      "url": "https://www.taptools.io/charts/nft/5a46271a9b32a4517ced20be4ba1f184c2f91b1a5dd480ab639eee57",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 66). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 67,
+      "name": "Over Exposed",
+      "collection_id": "over-exposed",
+      "policy_ids": [
+        "ffa56051fda3d106a96f09c3d209d4bf24a117406fb813fb8b4548e3"
+      ],
+      "page": 2,
+      "floor_price": 83,
+      "mcap": 332000,
+      "sales": 5383,
+      "owners": 1260,
+      "url": "https://www.taptools.io/charts/nft/ffa56051fda3d106a96f09c3d209d4bf24a117406fb813fb8b4548e3",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 67). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 68,
+      "name": "Stag Alliance",
+      "collection_id": "stag-alliance",
+      "policy_ids": [
+        "1fcf4baf8e7465504e115dcea4db6da1f7bed335f2a672e44ec3f94e"
+      ],
+      "page": 2,
+      "floor_price": 50,
+      "mcap": 375000,
+      "sales": 12539,
+      "owners": 991,
+      "url": "https://www.taptools.io/charts/nft/1fcf4baf8e7465504e115dcea4db6da1f7bed335f2a672e44ec3f94e",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 68). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 69,
+      "name": "Claypez",
+      "collection_id": "claypez",
+      "policy_ids": [
+        "bd30c07bed903332937dcf328e2bd6da5aec1e686c13e8c5f2c99e48"
+      ],
+      "page": 2,
+      "floor_price": 20,
+      "mcap": 120000,
+      "sales": 14000,
+      "owners": 1100,
+      "url": "https://www.taptools.io/charts/nft/bd30c07bed903332937dcf328e2bd6da5aec1e686c13e8c5f2c99e48",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 69). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 70,
+      "name": "Magic Kongs",
+      "collection_id": "magic-kongs",
+      "policy_ids": [
+        "2eeb39204c3d104b40ec56bfd612bb1067fdea45de15f3a8aad9db71"
+      ],
+      "page": 2,
+      "floor_price": 35,
+      "mcap": 349965,
+      "sales": 10130,
+      "owners": 1793,
+      "url": "https://www.taptools.io/charts/nft/2eeb39204c3d104b40ec56bfd612bb1067fdea45de15f3a8aad9db71",
+      "type": "gaming",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 70). Type: gaming. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 71,
+      "name": "EIKONIKOS - Genesis Passports",
+      "collection_id": "eikonikos-genesis-passports",
+      "policy_ids": [
+        "d1b21921e3cc1b7559c2691365ab3b9b1e495e1b0391213b71577430"
+      ],
+      "page": 2,
+      "floor_price": 20,
+      "mcap": 64960,
+      "sales": 3383,
+      "owners": 980,
+      "url": "https://www.taptools.io/charts/nft/d1b21921e3cc1b7559c2691365ab3b9b1e495e1b0391213b71577430",
+      "type": "event",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 71). Type: event. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 72,
+      "name": "Genesis Collector",
+      "collection_id": "genesis-collector",
+      "policy_ids": [
+        "8e0556c569082f195b406737647765ed6b05d27dcb2c65319b7ce391"
+      ],
+      "page": 2,
+      "floor_price": 6,
+      "mcap": 60000,
+      "sales": 13679,
+      "owners": 1361,
+      "url": "https://www.taptools.io/charts/nft/8e0556c569082f195b406737647765ed6b05d27dcb2c65319b7ce391",
+      "type": "event",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 72). Type: event. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 73,
+      "name": "Space Pugs Alpha",
+      "collection_id": "space-pugs-alpha",
+      "policy_ids": [
+        "4e5f3e165b93c99d922111d9818c03f33e8da8a9f6ae1465c7869a21"
+      ],
+      "page": 2,
+      "floor_price": 4,
+      "mcap": 31096,
+      "sales": 12159,
+      "owners": 799,
+      "url": "https://www.taptools.io/charts/nft/4e5f3e165b93c99d922111d9818c03f33e8da8a9f6ae1465c7869a21",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 73). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 74,
+      "name": "Rats DAO",
+      "collection_id": "rats-dao",
+      "policy_ids": [
+        "ca5fc915496a771109b98c4a2b76e32c21a8229f3332398cb8babcd7"
+      ],
+      "page": 2,
+      "floor_price": 8,
+      "mcap": 80016,
+      "sales": 9231,
+      "owners": 3045,
+      "url": "https://www.taptools.io/charts/nft/ca5fc915496a771109b98c4a2b76e32c21a8229f3332398cb8babcd7",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 74). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 75,
+      "name": "Cardano Warriors",
+      "collection_id": "cardano-warriors",
+      "policy_ids": [
+        "8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635"
+      ],
+      "page": 2,
+      "floor_price": 19,
+      "mcap": 190000,
+      "sales": 7770,
+      "owners": 2206,
+      "url": "https://www.taptools.io/charts/nft/8f80ebfaf62a8c33ae2adf047572604c74db8bc1daba2b43f9a65635",
+      "type": "gaming",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 75). Type: gaming. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 76,
+      "name": "Goombles",
+      "collection_id": "goombles",
+      "policy_ids": [
+        "158fd94afa7ee07055ccdee0ba68637fe0e700d0e58e8d12eca5be46"
+      ],
+      "page": 2,
+      "floor_price": 5,
+      "mcap": 33125,
+      "sales": 7978,
+      "owners": 1421,
+      "url": "https://www.taptools.io/charts/nft/158fd94afa7ee07055ccdee0ba68637fe0e700d0e58e8d12eca5be46",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 76). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 77,
+      "name": "CardanoTrees",
+      "collection_id": "cardanotrees",
+      "policy_ids": [
+        "e09e4f4217669b7f735b7a3724e835d8d6344db128eb03d6ea72885e"
+      ],
+      "page": 2,
+      "floor_price": 19,
+      "mcap": 190000,
+      "sales": 6814,
+      "owners": 2241,
+      "url": "https://www.taptools.io/charts/nft/e09e4f4217669b7f735b7a3724e835d8d6344db128eb03d6ea72885e",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 77). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 78,
+      "name": "Lazy Llamas",
+      "collection_id": "lazy-llamas",
+      "policy_ids": [
+        "9e7b9873fc65bc20ada9739b85d15057603577c1777c7325bba9ae9c"
+      ],
+      "page": 2,
+      "floor_price": 15,
+      "mcap": 56085,
+      "sales": 6428,
+      "owners": 1091,
+      "url": "https://www.taptools.io/charts/nft/9e7b9873fc65bc20ada9739b85d15057603577c1777c7325bba9ae9c",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 78). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 79,
+      "name": "Mutant Crocs",
+      "collection_id": "mutant-crocs",
+      "policy_ids": [
+        "d517f38dd2c5acc3347c8e933e2c0185fafe3ba838f8830000a3c95f"
+      ],
+      "page": 2,
+      "floor_price": 24,
+      "mcap": 144048,
+      "sales": 7413,
+      "owners": 1270,
+      "url": "https://www.taptools.io/charts/nft/d517f38dd2c5acc3347c8e933e2c0185fafe3ba838f8830000a3c95f",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 79). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 80,
+      "name": "Melting Moonboy",
+      "collection_id": "melting-moonboy",
+      "policy_ids": [
+        "637bae5845e801779651d997bedc2dad53ddbe0d5f940b4ff723d769"
+      ],
+      "page": 2,
+      "floor_price": 32,
+      "mcap": 177760,
+      "sales": 11971,
+      "owners": 1267,
+      "url": "https://www.taptools.io/charts/nft/637bae5845e801779651d997bedc2dad53ddbe0d5f940b4ff723d769",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 80). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 81,
+      "name": "Platypus Cyberpunks",
+      "collection_id": "platypus-cyberpunks",
+      "policy_ids": [
+        "787a6798527b21ad0e0f62c021b4ce036513a2d3342b5cb519d2ca19"
+      ],
+      "page": 2,
+      "floor_price": 4,
+      "mcap": 22220,
+      "sales": 5692,
+      "owners": 583,
+      "url": "https://www.taptools.io/charts/nft/787a6798527b21ad0e0f62c021b4ce036513a2d3342b5cb519d2ca19",
+      "type": "gaming",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 81). Type: gaming. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 82,
+      "name": "Unbothered Wolves",
+      "collection_id": "unbothered-wolves",
+      "policy_ids": [
+        "565c46f59d8e92eb47404b348cc4ff88a625d25ecbe4bab92ff25e56"
+      ],
+      "page": 2,
+      "floor_price": 10,
+      "mcap": 50000,
+      "sales": 9444,
+      "owners": 819,
+      "url": "https://www.taptools.io/charts/nft/565c46f59d8e92eb47404b348cc4ff88a625d25ecbe4bab92ff25e56",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 82). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 84,
+      "name": "aeoniumsky - Blocks",
+      "collection_id": "aeoniumsky-blocks",
+      "policy_ids": [
+        "6dad8c414e24f941eedb8275c0a1d341e697d584b1b92f4a5193a62f"
+      ],
+      "page": 2,
+      "floor_price": 41,
+      "mcap": 87740,
+      "sales": 2405,
+      "owners": 674,
+      "url": "https://www.taptools.io/charts/nft/6dad8c414e24f941eedb8275c0a1d341e697d584b1b92f4a5193a62f",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 84). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 85,
+      "name": "Ape Nation",
+      "collection_id": "ape-nation",
+      "policy_ids": [
+        "58b9f55e6ea9828dea7a8d9f49420171c6360f99b5e6e86de5fdb644"
+      ],
+      "page": 2,
+      "floor_price": 22,
+      "mcap": 219978,
+      "sales": 18841,
+      "owners": 1761,
+      "url": "https://www.taptools.io/charts/nft/58b9f55e6ea9828dea7a8d9f49420171c6360f99b5e6e86de5fdb644",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 85). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 86,
+      "name": "Havoc Worlds",
+      "collection_id": "havoc-worlds",
+      "policy_ids": [
+        "1088b361c41f49906645cedeeb7a9ef0e0b793b1a2d24f623ea74876"
+      ],
+      "page": 2,
+      "floor_price": 15,
+      "mcap": 149985,
+      "sales": 15060,
+      "owners": 1651,
+      "url": "https://www.taptools.io/charts/nft/1088b361c41f49906645cedeeb7a9ef0e0b793b1a2d24f623ea74876",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 86). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 87,
+      "name": "Cardania",
+      "collection_id": "cardania",
+      "policy_ids": [
+        "c859e9d7e71b8f90bdc1e453fd1b9adbc5e6163898fb574543cb5be8"
+      ],
+      "page": 2,
+      "floor_price": 11,
+      "mcap": 220132,
+      "sales": 13544,
+      "owners": 2531,
+      "url": "https://www.taptools.io/charts/nft/c859e9d7e71b8f90bdc1e453fd1b9adbc5e6163898fb574543cb5be8",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 87). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 88,
+      "name": "Derp Birds - PRED",
+      "collection_id": "derp-birds-pred",
+      "policy_ids": [
+        "73056bffdf28f82da5db1f5ac7c06d030c8a551f43889f7f85746a4a"
+      ],
+      "page": 2,
+      "floor_price": 48,
+      "mcap": 182820,
+      "sales": 3819,
+      "owners": 645,
+      "url": "https://www.taptools.io/charts/nft/73056bffdf28f82da5db1f5ac7c06d030c8a551f43889f7f85746a4a",
+      "type": "pfp",
+      "triage_status": "include_later",
+      "reason_code": "ecosystem_sibling",
+      "ecosystem": "derp-birds",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 88). Type: pfp. Deferred: ecosystem sibling (derp-birds); prioritize first policy in rank order."
+    },
+    {
+      "rank": 89,
+      "name": "Junkie",
+      "collection_id": "junkie",
+      "policy_ids": [
+        "179dd4922c947166ca8ce3321be2d9f23232c7c1f8e3dd91cca82b22"
+      ],
+      "page": 2,
+      "floor_price": 15,
+      "mcap": 90000,
+      "sales": 8812,
+      "owners": 1127,
+      "url": "https://www.taptools.io/charts/nft/179dd4922c947166ca8ce3321be2d9f23232c7c1f8e3dd91cca82b22",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 89). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 90,
+      "name": "Borg Club",
+      "collection_id": "borg-club",
+      "policy_ids": [
+        "8c06b3c611ec9bc9037c76a9e2cf270c7a147341e6daffeda614cdd5"
+      ],
+      "page": 2,
+      "floor_price": 9,
+      "mcap": 29970,
+      "sales": 6757,
+      "owners": 1375,
+      "url": "https://www.taptools.io/charts/nft/8c06b3c611ec9bc9037c76a9e2cf270c7a147341e6daffeda614cdd5",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 90). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 91,
+      "name": "Derp Apes",
+      "collection_id": "derp-apes",
+      "policy_ids": [
+        "f4873b426a498350c579690bd1f4a369d5d7b521c778acf322f77334"
+      ],
+      "page": 2,
+      "floor_price": 35,
+      "mcap": 311115,
+      "sales": 14553,
+      "owners": 1383,
+      "url": "https://www.taptools.io/charts/nft/f4873b426a498350c579690bd1f4a369d5d7b521c778acf322f77334",
+      "type": "pfp",
+      "triage_status": "include_later",
+      "reason_code": "ecosystem_sibling",
+      "ecosystem": "derp-birds",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 91). Type: pfp. Deferred: ecosystem sibling (derp-birds); prioritize first policy in rank order."
+    },
+    {
+      "rank": 93,
+      "name": "Mocossi Lands",
+      "collection_id": "mocossi-lands",
+      "policy_ids": [
+        "0af69d267670bfc1bea2c591b95131688b201f499310360e52cee812"
+      ],
+      "page": 2,
+      "floor_price": 6,
+      "mcap": 60012,
+      "sales": 7362,
+      "owners": 1649,
+      "url": "https://www.taptools.io/charts/nft/0af69d267670bfc1bea2c591b95131688b201f499310360e52cee812",
+      "type": "land",
+      "triage_status": "include_later",
+      "reason_code": "ecosystem_sibling",
+      "ecosystem": "mocossi",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 93). Type: land. Deferred: ecosystem sibling (mocossi); prioritize first policy in rank order."
+    },
+    {
+      "rank": 94,
+      "name": "Zombie Hunters",
+      "collection_id": "zombie-hunters",
+      "policy_ids": [
+        "320bb921e517c8111e309b2822633da6c9af346ca4e18b79a94864b3"
+      ],
+      "page": 2,
+      "floor_price": 10,
+      "mcap": 100000,
+      "sales": 10615,
+      "owners": 1895,
+      "url": "https://www.taptools.io/charts/nft/320bb921e517c8111e309b2822633da6c9af346ca4e18b79a94864b3",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 94). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 95,
+      "name": "Lil Sappys",
+      "collection_id": "lil-sappys",
+      "policy_ids": [
+        "8fead602858a1d90c9c2f8e6cd6ba3fa086c668f0bc84193356f5545"
+      ],
+      "page": 2,
+      "floor_price": 30,
+      "mcap": 233340,
+      "sales": 10685,
+      "owners": 1699,
+      "url": "https://www.taptools.io/charts/nft/8fead602858a1d90c9c2f8e6cd6ba3fa086c668f0bc84193356f5545",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 95). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 96,
+      "name": "Chains of War - Genesis Heroes",
+      "collection_id": "chains-of-war-genesis-heroes",
+      "policy_ids": [
+        "a587ce7893ec56fa6136e483499d2a8210e29c34b7dc673446128875"
+      ],
+      "page": 2,
+      "floor_price": 17,
+      "mcap": 170000,
+      "sales": 10019,
+      "owners": 1232,
+      "url": "https://www.taptools.io/charts/nft/a587ce7893ec56fa6136e483499d2a8210e29c34b7dc673446128875",
+      "type": "gaming",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 96). Type: gaming. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 97,
+      "name": "Strongholds by House Of Titans",
+      "collection_id": "strongholds-by-house-of-titans",
+      "policy_ids": [
+        "ecd0970cb2d599a8bdb61f6eb597e25eaf34d76bdf8ade17b6a8fa59"
+      ],
+      "page": 2,
+      "floor_price": 425,
+      "mcap": 2124575,
+      "sales": 2364,
+      "owners": 444,
+      "url": "https://www.taptools.io/charts/nft/ecd0970cb2d599a8bdb61f6eb597e25eaf34d76bdf8ade17b6a8fa59",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 97). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 98,
+      "name": "Frankenstein",
+      "collection_id": "frankenstein",
+      "policy_ids": [
+        "e7514e65f977ee4b84a8e62e7d97ea2e5c11682dfe1444d8a14e74db"
+      ],
+      "page": 2,
+      "floor_price": 15,
+      "mcap": 83700,
+      "sales": 6671,
+      "owners": 964,
+      "url": "https://www.taptools.io/charts/nft/e7514e65f977ee4b84a8e62e7d97ea2e5c11682dfe1444d8a14e74db",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 98). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 99,
+      "name": "MulgaKongz",
+      "collection_id": "mulgakongz",
+      "policy_ids": [
+        "77999d5a1e09f9bdc16393cab713f26345dc0827a9e5134cf0f9da37"
+      ],
+      "page": 2,
+      "floor_price": 13,
+      "mcap": 72215,
+      "sales": 7774,
+      "owners": 1042,
+      "url": "https://www.taptools.io/charts/nft/77999d5a1e09f9bdc16393cab713f26345dc0827a9e5134cf0f9da37",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 99). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 100,
+      "name": "Brave Dogs - Genesis Collection",
+      "collection_id": "brave-dogs-genesis-collection",
+      "policy_ids": [
+        "09787e7c506749f5561668d91ed8979b09b1df5f86c84cb9bdd080a0"
+      ],
+      "page": 2,
+      "floor_price": 30,
+      "mcap": 146640,
+      "sales": 4564,
+      "owners": 479,
+      "url": "https://www.taptools.io/charts/nft/09787e7c506749f5561668d91ed8979b09b1df5f86c84cb9bdd080a0",
+      "type": "event",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 100). Type: event. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    },
+    {
+      "rank": 101,
+      "name": "CardanoVillage",
+      "collection_id": "cardanovillage",
+      "policy_ids": [
+        "2c763e2db8337324df122fffa38e0d97ecdf53d139025a0e1b6d6b97"
+      ],
+      "page": 3,
+      "floor_price": 5,
+      "mcap": 132480,
+      "sales": 14749,
+      "owners": 4178,
+      "url": "https://www.taptools.io/charts/nft/2c763e2db8337324df122fffa38e0d97ecdf53d139025a0e1b6d6b97",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 101). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 102,
+      "name": "Funplastic",
+      "collection_id": "funplastic",
+      "policy_ids": [
+        "f7f5a12b681be1a2c02054414a726fefadd47e24b0343cd287c0283d"
+      ],
+      "page": 3,
+      "floor_price": 55,
+      "mcap": 550000,
+      "sales": 10049,
+      "owners": 1722,
+      "url": "https://www.taptools.io/charts/nft/f7f5a12b681be1a2c02054414a726fefadd47e24b0343cd287c0283d",
+      "type": "mixed",
+      "triage_status": "include_later",
+      "reason_code": "lower_signal_mixed",
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 102). Type: mixed. Deferred: mixed/lower-signal; onboard after include_now batch."
+    },
+    {
+      "rank": 103,
+      "name": "Artifct Moon",
+      "collection_id": "artifct-moon",
+      "policy_ids": [
+        "e5a2bcc51466942a9db1da62471a1b682bde3abcebafee2c7fb1e378"
+      ],
+      "page": 3,
+      "floor_price": 6,
+      "mcap": 30000,
+      "sales": 5922,
+      "owners": 1578,
+      "url": "https://www.taptools.io/charts/nft/e5a2bcc51466942a9db1da62471a1b682bde3abcebafee2c7fb1e378",
+      "type": "art",
+      "triage_status": "include_now",
+      "reason_code": null,
+      "sample_assets": [],
+      "notes": "Phase 3 Top-100 review (TapTools rank 103). Type: art. Phase 3 candidate: increases coverage beyond 30-collection baseline."
+    }
+  ],
+  "excluded": [
+    {
+      "rank": 1,
+      "name": "SpaceBudz",
+      "collection_id": "spacebudz",
+      "policy_ids": [
+        "4523c5e21d409b81c95b45b0aea275b8ea1406e6cafea5583b9f8a5f"
+      ],
+      "page": 1,
+      "floor_price": 540,
+      "mcap": 3073058,
+      "sales": 13034,
+      "owners": 2218,
+      "url": "https://www.taptools.io/charts/nft/4523c5e21d409b81c95b45b0aea275b8ea1406e6cafea5583b9f8a5f",
+      "type": "gaming",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 1,
+      "audited_collection_id": "spacebudz"
+    },
+    {
+      "rank": 3,
+      "name": "Pavia",
+      "collection_id": "pavia",
+      "policy_ids": [
+        "4bf184e01e0f163296ab253edd60774e2d34367d0e7b6cbc689b567d"
+      ],
+      "page": 1,
+      "floor_price": 19,
+      "mcap": 1801297,
+      "sales": 75209,
+      "owners": 16686,
+      "url": "https://www.taptools.io/charts/nft/4bf184e01e0f163296ab253edd60774e2d34367d0e7b6cbc689b567d",
+      "type": "land",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 1,
+      "audited_collection_id": "pavia"
+    },
+    {
+      "rank": 4,
+      "name": "Clay Nation",
+      "collection_id": "clay-nation",
+      "policy_ids": [
+        "40fa2aa67258b4ce7b5782f74831d46a84c59a0ff0c28262fab21728"
+      ],
+      "page": 1,
+      "floor_price": 175,
+      "mcap": 1750000,
+      "sales": 22901,
+      "owners": 4253,
+      "url": "https://www.taptools.io/charts/nft/40fa2aa67258b4ce7b5782f74831d46a84c59a0ff0c28262fab21728",
+      "type": "gaming",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 1,
+      "audited_collection_id": "clay-nation"
+    },
+    {
+      "rank": 6,
+      "name": "Boss Cat Rocket Club",
+      "collection_id": "boss-cat-rocket-club",
+      "policy_ids": [
+        "c364930bd612f42e14d156e1c5410511e77f64cab8f2367a9df544d1"
+      ],
+      "page": 1,
+      "floor_price": 149,
+      "mcap": 1492198,
+      "sales": 21549,
+      "owners": 4098,
+      "url": "https://www.taptools.io/charts/nft/c364930bd612f42e14d156e1c5410511e77f64cab8f2367a9df544d1",
+      "type": "gaming",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 1,
+      "audited_collection_id": "boss-cat-rocket-club"
+    },
+    {
+      "rank": 7,
+      "name": "Chilled Kongs",
+      "collection_id": "chilled-kongs",
+      "policy_ids": [
+        "c56d4cceb8a8550534968e1bf165137ca41e908d2d780cc1402079bd"
+      ],
+      "page": 1,
+      "floor_price": 110,
+      "mcap": 977680,
+      "sales": 24218,
+      "owners": 2704,
+      "url": "https://www.taptools.io/charts/nft/c56d4cceb8a8550534968e1bf165137ca41e908d2d780cc1402079bd",
+      "type": "gaming",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 2,
+      "audited_collection_id": "chilled-kongs"
+    },
+    {
+      "rank": 8,
+      "name": "Cornucopias Land Sale - Zones 1-3",
+      "collection_id": "cornucopias-land-zones-1-3",
+      "policy_ids": [
+        "07b39a8ead0ef1e3054e816a3b6910060beaf2210fded63fb90ce137"
+      ],
+      "page": 1,
+      "floor_price": 108,
+      "mcap": 2592000,
+      "sales": 30627,
+      "owners": 6309,
+      "url": "https://www.taptools.io/charts/nft/07b39a8ead0ef1e3054e816a3b6910060beaf2210fded63fb90ce137",
+      "type": "land",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 1,
+      "audited_collection_id": "cornucopias-land-zones-1-3"
+    },
+    {
+      "rank": 9,
+      "name": "Boss Cat Rocket Parts",
+      "collection_id": "boss-cat-rocket-parts",
+      "policy_ids": [
+        "761ed110b4040e153ffc20bd2203f2e7d57d610a0cf0eae6167e574d"
+      ],
+      "page": 1,
+      "floor_price": 150,
+      "mcap": 666600,
+      "sales": 4508,
+      "owners": 1089,
+      "url": "https://www.taptools.io/charts/nft/761ed110b4040e153ffc20bd2203f2e7d57d610a0cf0eae6167e574d",
+      "type": "gaming",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 2,
+      "audited_collection_id": "boss-cat-rocket-parts"
+    },
+    {
+      "rank": 10,
+      "name": "DEADPXLZ",
+      "collection_id": "deadpxlz",
+      "policy_ids": [
+        "1ec85dcee27f2d90ec1f9a1e4ce74a667dc9be8b184463223f9c9601"
+      ],
+      "page": 1,
+      "floor_price": 214,
+      "mcap": 2140000,
+      "sales": 12343,
+      "owners": 1541,
+      "url": "https://www.taptools.io/charts/nft/1ec85dcee27f2d90ec1f9a1e4ce74a667dc9be8b184463223f9c9601",
+      "type": "gaming",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 1,
+      "audited_collection_id": "deadpxlz"
+    },
+    {
+      "rank": 11,
+      "name": "Pitches at Clay Nation",
+      "collection_id": "pitches-at-clay-nation",
+      "policy_ids": [
+        "13e3f9964fe386930ec178d12a43c96a7f5841270c2146fc509a9f3e"
+      ],
+      "page": 1,
+      "floor_price": 22,
+      "mcap": 704594,
+      "sales": 26504,
+      "owners": 6655,
+      "url": "https://www.taptools.io/charts/nft/13e3f9964fe386930ec178d12a43c96a7f5841270c2146fc509a9f3e",
+      "type": "land",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 2,
+      "audited_collection_id": "pitches-at-clay-nation"
+    },
+    {
+      "rank": 12,
+      "name": "OREMOB",
+      "collection_id": "oremob",
+      "policy_ids": [
+        "062b1da3d344c1e6208ef908b2d308201e7ff6bcfddf0f606249817f"
+      ],
+      "page": 1,
+      "floor_price": 40,
+      "mcap": 397959,
+      "sales": 15124,
+      "owners": 1824,
+      "url": "https://www.taptools.io/charts/nft/062b1da3d344c1e6208ef908b2d308201e7ff6bcfddf0f606249817f",
+      "type": "gaming",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 2,
+      "audited_collection_id": "oremob"
+    },
+    {
+      "rank": 13,
+      "name": "Cabins by The Ape Society",
+      "collection_id": "cabins-ape-society",
+      "policy_ids": [
+        "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09"
+      ],
+      "page": 1,
+      "floor_price": 14,
+      "mcap": 140000,
+      "sales": 14922,
+      "owners": 1628,
+      "url": "https://www.taptools.io/charts/nft/d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09",
+      "type": "land",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 2,
+      "audited_collection_id": "cabins-ape-society"
+    },
+    {
+      "rank": 14,
+      "name": "Clay Nation x Good Charlotte by Clay Mates",
+      "collection_id": "clay-nation-good-charlotte",
+      "policy_ids": [
+        "94da605878403d07c144fe96cd50fe20c16186dd8d171c78ed6a8768"
+      ],
+      "page": 1,
+      "floor_price": 85,
+      "mcap": 801295,
+      "sales": 15359,
+      "owners": 3348,
+      "url": "https://www.taptools.io/charts/nft/94da605878403d07c144fe96cd50fe20c16186dd8d171c78ed6a8768",
+      "type": "gaming",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 2,
+      "audited_collection_id": "clay-nation-good-charlotte"
+    },
+    {
+      "rank": 15,
+      "name": "The Mallard Order",
+      "collection_id": "the-mallard-order",
+      "policy_ids": [
+        "901ba6e9831b078e131a1cc403d6139af21bda255cea6c9f770f4834"
+      ],
+      "page": 1,
+      "floor_price": 95,
+      "mcap": 617500,
+      "sales": 15534,
+      "owners": 1627,
+      "url": "https://www.taptools.io/charts/nft/901ba6e9831b078e131a1cc403d6139af21bda255cea6c9f770f4834",
+      "type": "gaming",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 1,
+      "audited_collection_id": "the-mallard-order"
+    },
+    {
+      "rank": 16,
+      "name": "Boss Planet Real Estate",
+      "collection_id": "boss-planet-real-estate",
+      "policy_ids": [
+        "5a2cdc6e3aa9612fe4676672f443e7efd39c309d45e7919a4bf27750"
+      ],
+      "page": 1,
+      "floor_price": 7,
+      "mcap": 310100,
+      "sales": 16912,
+      "owners": 6806,
+      "url": "https://www.taptools.io/charts/nft/5a2cdc6e3aa9612fe4676672f443e7efd39c309d45e7919a4bf27750",
+      "type": "land",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 2,
+      "audited_collection_id": "boss-planet-real-estate"
+    },
+    {
+      "rank": 17,
+      "name": "Yummi Universe - Naru",
+      "collection_id": "yummi-universe-naru",
+      "policy_ids": [
+        "b1814c6d3b0f7a42c9ee990c06c9d504a42bb22bf0e34e7908ae21b2"
+      ],
+      "page": 1,
+      "floor_price": 18,
+      "mcap": 180000,
+      "sales": 21187,
+      "owners": 3666,
+      "url": "https://www.taptools.io/charts/nft/b1814c6d3b0f7a42c9ee990c06c9d504a42bb22bf0e34e7908ae21b2",
+      "type": "gaming",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 2,
+      "audited_collection_id": "yummi-universe-naru"
+    },
+    {
+      "rank": 23,
+      "name": "Jellycubes",
+      "collection_id": "jellycubes",
+      "policy_ids": [
+        "3ee441f40fe395a2e98eea1df7cf8816b0fca3d5d164893596ce306d"
+      ],
+      "page": 1,
+      "floor_price": 444,
+      "mcap": 1154400,
+      "sales": 3005,
+      "owners": 790,
+      "url": "https://www.taptools.io/charts/nft/3ee441f40fe395a2e98eea1df7cf8816b0fca3d5d164893596ce306d",
+      "type": "mixed",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 1,
+      "audited_collection_id": "jellycubes"
+    },
+    {
+      "rank": 24,
+      "name": "Book.io - Gutenberg Bible Collection",
+      "collection_id": "book-io-gutenberg-bible",
+      "policy_ids": [
+        "477cec772adb1466b301fb8161f505aa66ed1ee8d69d3e7984256a43"
+      ],
+      "page": 1,
+      "floor_price": 239,
+      "mcap": 2390000,
+      "sales": 7948,
+      "owners": 2470,
+      "url": "https://www.taptools.io/charts/nft/477cec772adb1466b301fb8161f505aa66ed1ee8d69d3e7984256a43",
+      "type": "media",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 2,
+      "audited_collection_id": "book-io-gutenberg-bible"
+    },
+    {
+      "rank": 33,
+      "name": "ADA Handle",
+      "collection_id": "ada-handle",
+      "policy_ids": [
+        "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a"
+      ],
+      "page": 1,
+      "floor_price": 4,
+      "mcap": 970320,
+      "sales": 20347,
+      "owners": 69905,
+      "url": "https://www.taptools.io/charts/nft/f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a",
+      "type": "identity",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 1,
+      "audited_collection_id": "ada-handle"
+    },
+    {
+      "rank": 43,
+      "name": "Cornucopias GTI Javelin 2022",
+      "collection_id": "cornucopias-gti-javelin-2022",
+      "policy_ids": [
+        "086849cd9f672e731e0d9590a2d28a6a690ffa2f73bae0e1970f0491"
+      ],
+      "page": 1,
+      "floor_price": 14,
+      "mcap": 177143,
+      "sales": 19513,
+      "owners": 5542,
+      "url": "https://www.taptools.io/charts/nft/086849cd9f672e731e0d9590a2d28a6a690ffa2f73bae0e1970f0491",
+      "type": "gaming",
+      "triage_status": "exclude",
+      "reason_code": "already_onboarded",
+      "audited_phase": 2,
+      "audited_collection_id": "cornucopias-gti-javelin-2022"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "cabins-ape-society",
+  "name": "Cabins by The Ape Society",
+  "definition_status": "complete",
+  "policy_ids": [
+    "d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Cabins by The Ape Society"
+    },
+    "description": {
+      "value": "Ape Society cabin parcels with address-style metadata."
+    },
+    "category": {
+      "value": "land"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "rate",
+      "display_name": "rate",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "rate"
+      }
+    },
+    {
+      "canonical_trait": "Street",
+      "display_name": "Street",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Street"
+      }
+    },
+    {
+      "canonical_trait": "District",
+      "display_name": "District",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "District"
+      }
+    },
+    {
+      "canonical_trait": "Cabin Size",
+      "display_name": "Cabin Size",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Cabin Size"
+      }
+    },
+    {
+      "canonical_trait": "SLVD Rating",
+      "display_name": "SLVD Rating",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "SLVD Rating"
+      }
+    },
+    {
+      "canonical_trait": "X Coordinate",
+      "display_name": "X Coordinate",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "X Coordinate"
+      }
+    },
+    {
+      "canonical_trait": "Y Coordinate",
+      "display_name": "Y Coordinate",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Y Coordinate"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    },
+    "files": [
+      {
+        "label": "Primary File",
+        "source_path": "$.files[0].src",
+        "media_type_path": "$.files[0].mediaType"
+      },
+      {
+        "label": "File 2",
+        "source_path": "$.files[1].src",
+        "media_type_path": "$.files[1].mediaType"
+      },
+      {
+        "label": "File 3",
+        "source_path": "$.files[2].src",
+        "media_type_path": "$.files[2].mediaType"
+      }
+    ]
+  },
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": []
+}

@@ -1,0 +1,231 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "the-mallard-order",
+  "name": "The Mallard Order",
+  "definition_status": "complete",
+  "policy_ids": [
+    "901ba6e9831b078e131a1cc403d6139af21bda255cea6c9f770f4834"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "The Mallard Order"
+    },
+    "description": {
+      "value": "Lore-driven community PFP collection; traits stored in Attributes array of singleton objects."
+    },
+    "category": {
+      "value": "pfp"
+    },
+    "tags": ["pfp", "community", "lore"]
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    },
+    "custom": {
+      "description": "Traits use capitalized Attributes array of single-key objects (GAP-001 array_singleton_object)."
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "Accessories",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Attributes",
+        "key": "Accessories"
+      }
+    },
+    {
+      "canonical_trait": "Head",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Attributes",
+        "key": "Head"
+      }
+    },
+    {
+      "canonical_trait": "Mask",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Attributes",
+        "key": "Mask"
+      }
+    },
+    {
+      "canonical_trait": "Beak",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Attributes",
+        "key": "Beak"
+      }
+    },
+    {
+      "canonical_trait": "Eyewear",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Attributes",
+        "key": "Eyewear"
+      }
+    },
+    {
+      "canonical_trait": "Eyes",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Attributes",
+        "key": "Eyes"
+      }
+    },
+    {
+      "canonical_trait": "Face",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Attributes",
+        "key": "Face"
+      }
+    },
+    {
+      "canonical_trait": "Neckwear",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Attributes",
+        "key": "Neckwear"
+      }
+    },
+    {
+      "canonical_trait": "Clothes",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Attributes",
+        "key": "Clothes"
+      }
+    },
+    {
+      "canonical_trait": "Skin",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Attributes",
+        "key": "Skin"
+      }
+    },
+    {
+      "canonical_trait": "Feathers",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Attributes",
+        "key": "Feathers"
+      }
+    },
+    {
+      "canonical_trait": "Back",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Attributes",
+        "key": "Back"
+      }
+    },
+    {
+      "canonical_trait": "Background",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Attributes",
+        "key": "Background"
+      }
+    },
+    {
+      "canonical_trait": "School of Thought",
+      "value_type": "string",
+      "category": "lore",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Attributes",
+        "key": "School of Thought"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    }
+  },
+  "social_mappings": {
+    "x": {
+      "source_path": "$.Twitter",
+      "source": "cip25"
+    }
+  },
+  "link_mappings": {
+    "website": {
+      "source_path": "$.Website",
+      "source": "cip25"
+    }
+  },
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "Traits extracted via array_singleton_object on $.Attributes (GAP-001 resolved)."
+    },
+    {
+      "severity": "info",
+      "message": "License not present in sampled on-chain metadata."
+    }
+  ]
+}

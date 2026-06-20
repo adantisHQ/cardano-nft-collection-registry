@@ -1,0 +1,146 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "cornucopias-land-zones-1-3",
+  "name": "Cornucopias Land Sale - Zones 1-3",
+  "definition_status": "partial",
+  "policy_ids": [
+    "07b39a8ead0ef1e3054e816a3b6910060beaf2210fded63fb90ce137"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Cornucopias Land Sale - Zones 1-3"
+    },
+    "description": {
+      "source_path": "$.description",
+      "source": "cip25"
+    },
+    "category": {
+      "value": "land"
+    },
+    "tags": ["gaming", "land", "cornucopias"]
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    },
+    "custom": {
+      "description": "Land claims include files[] multi-media and social URLs nested under media object."
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "zone_choices",
+      "display_name": "Zone Choices",
+      "value_type": "array",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.attributes.zoneChoices"
+      }
+    },
+    {
+      "canonical_trait": "rarity",
+      "display_name": "Rarity",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "rarity" }
+    },
+    {
+      "canonical_trait": "season",
+      "display_name": "Season",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "season" }
+    },
+    {
+      "canonical_trait": "type_class",
+      "display_name": "Type Class",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "typeClass" }
+    },
+    {
+      "canonical_trait": "game_id",
+      "display_name": "Game ID",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "gameid" }
+    },
+    {
+      "canonical_trait": "tag",
+      "display_name": "Tag",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "tag" }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    },
+    "files": [
+      {
+        "label": "Primary File",
+        "source_path": "$.files[0].src",
+        "media_type_path": "$.files[0].mediaType"
+      },
+      {
+        "label": "Web Video",
+        "source_path": "$.files[1].src",
+        "media_type_path": "$.files[1].mediaType"
+      },
+      {
+        "label": "Preview GIF",
+        "source_path": "$.files[2].src",
+        "media_type_path": "$.files[2].mediaType"
+      }
+    ]
+  },
+  "social_mappings": {},
+  "link_mappings": {
+    "website": {
+      "source_path": "$.media.Website",
+      "source": "cip25"
+    },
+    "other": {
+      "source_path": "$.media.Link Tree",
+      "source": "cip25",
+      "notes": "Link tree URL nested under media object."
+    }
+  },
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "Social URLs appear under media object (Website, Link Tree), not standard root social keys."
+    },
+    {
+      "severity": "info",
+      "message": "License not present in sampled on-chain metadata."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "cip68-partial-spec",
+  "name": "CIP-68 Partial Spec",
+  "definition_status": "partial",
+  "policy_ids": [
+    "f0500000000000000000000000000000000000000000000000000000"
+  ],
+  "identity": {
+    "display_name": { "value": "CIP-68 Partial Spec" },
+    "description": {
+      "value": "Spec example: CIP-68 reference-token metadata with hex-encoded traits (SpaceBudz-style, decoding incomplete)."
+    },
+    "category": { "value": "pfp" },
+    "tags": ["pfp", "cip68", "spec-example"]
+  },
+  "metadata_layout": {
+    "primary_standard": "cip68",
+    "metadata_root": "$",
+    "asset_name_encoding": "hex",
+    "cip68": {
+      "enabled": true,
+      "datum_path": null,
+      "reference_token_pattern": null
+    },
+    "custom": {
+      "description": "Reference-token metadata stores hex-encoded traits; user tokens may have null metadata."
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "name",
+      "display_name": "Name",
+      "value_type": "string",
+      "category": "identity",
+      "source": "cip68",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.name"
+      }
+    },
+    {
+      "canonical_trait": "traits_encoded",
+      "display_name": "Traits (encoded)",
+      "value_type": "string",
+      "category": "visual",
+      "dynamic": true,
+      "source": "cip68",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.traits"
+      },
+      "notes": "Hex-encoded trait payload; per-trait decoding not specified in this definition."
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip68"
+    }
+  },
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown"
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "warning",
+      "message": "Traits appear as hex-encoded values; full trait normalization is not defined."
+    },
+    {
+      "severity": "warning",
+      "message": "Index reference tokens with CIP-68 metadata; many user tokens may have null on-chain metadata."
+    }
+  ]
+}

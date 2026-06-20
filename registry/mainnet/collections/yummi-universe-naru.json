@@ -1,0 +1,103 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "yummi-universe-naru",
+  "name": "Yummi Universe - Naru",
+  "definition_status": "complete",
+  "policy_ids": [
+    "b1814c6d3b0f7a42c9ee990c06c9d504a42bb22bf0e34e7908ae21b2"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Yummi Universe - Naru"
+    },
+    "description": {
+      "value": "Seasonal Yummi Universe character line with standard attributes object."
+    },
+    "category": {
+      "value": "pfp"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "body",
+      "display_name": "Body",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.attributes.Body"
+      }
+    },
+    {
+      "canonical_trait": "face",
+      "display_name": "Face",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.attributes.Face"
+      }
+    },
+    {
+      "canonical_trait": "headwear",
+      "display_name": "Headwear",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.attributes.Headwear"
+      }
+    },
+    {
+      "canonical_trait": "background",
+      "display_name": "Background",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.attributes.Background"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    }
+  },
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {
+    "copyright": {
+      "source_path": "$.copyright",
+      "source": "cip25"
+    }
+  },
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": []
+}

@@ -1,0 +1,110 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "unbounded-earth",
+  "name": "UnboundedEarth",
+  "definition_status": "complete",
+  "policy_ids": [
+    "bb78d3b6638537d6df7ae43791ead3d50e75fdae82131eff2b7ae994"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "UnboundedEarth"
+    },
+    "description": {
+      "value": "Unbounded Earth land parcels with decorative section-prefixed field keys."
+    },
+    "category": {
+      "value": "land"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "---X---",
+      "display_name": "---X---",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "---X---"
+      }
+    },
+    {
+      "canonical_trait": "---Y---",
+      "display_name": "---Y---",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "---Y---"
+      }
+    },
+    {
+      "canonical_trait": "---TYPE---",
+      "display_name": "---TYPE---",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "---TYPE---"
+      }
+    },
+    {
+      "canonical_trait": "---SEASON---",
+      "display_name": "---SEASON---",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "---SEASON---"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    },
+    "files": [
+      {
+        "label": "Primary File",
+        "source_path": "$.files[0].src",
+        "media_type_path": "$.files[0].mediaType"
+      }
+    ]
+  },
+  "social_mappings": {},
+  "link_mappings": {
+    "website": {
+      "source_path": "$.---LINK---",
+      "source": "cip25"
+    }
+  },
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": []
+}

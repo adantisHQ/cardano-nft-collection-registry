@@ -1,0 +1,132 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "smart-places",
+  "name": "Smart Places",
+  "definition_status": "complete",
+  "policy_ids": [
+    "64036a8c21866b47d4597657151e1490a7c225caef4715b37b9eca38"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Smart Places"
+    },
+    "description": {
+      "value": "Geo-tagged land plot NFTs with lat/lng and place metadata."
+    },
+    "category": {
+      "value": "land"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "lat",
+      "display_name": "lat",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "lat"
+      }
+    },
+    {
+      "canonical_trait": "lng",
+      "display_name": "lng",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "lng"
+      }
+    },
+    {
+      "canonical_trait": "hexId",
+      "display_name": "hexId",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "hexId"
+      }
+    },
+    {
+      "canonical_trait": "place",
+      "display_name": "place",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "place"
+      }
+    },
+    {
+      "canonical_trait": "country",
+      "display_name": "country",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "country"
+      }
+    },
+    {
+      "canonical_trait": "publisher",
+      "display_name": "publisher",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "publisher"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    },
+    "files": [
+      {
+        "label": "Primary File",
+        "source_path": "$.files[0].src",
+        "media_type_path": "$.files[0].mediaType"
+      }
+    ]
+  },
+  "social_mappings": {},
+  "link_mappings": {
+    "website": {
+      "source_path": "$.url",
+      "source": "cip25"
+    }
+  },
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": []
+}

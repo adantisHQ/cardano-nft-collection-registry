@@ -1,0 +1,135 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "book-io-gutenberg-bible",
+  "name": "Book.io - Gutenberg Bible Collection",
+  "definition_status": "partial",
+  "policy_ids": [
+    "477cec772adb1466b301fb8161f505aa66ed1ee8d69d3e7984256a43"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Book.io - Gutenberg Bible Collection"
+    },
+    "description": {
+      "value": "Book.io document NFT with data URI, sha256, and cover files."
+    },
+    "category": {
+      "value": "media"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "gold",
+      "display_name": "Gold",
+      "value_type": "array",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.attributes.Gold"
+      }
+    },
+    {
+      "canonical_trait": "stroke",
+      "display_name": "Stroke",
+      "value_type": "array",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.attributes.Stroke"
+      }
+    },
+    {
+      "canonical_trait": "swirls",
+      "display_name": "Swirls",
+      "value_type": "array",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.attributes.Swirls"
+      }
+    },
+    {
+      "canonical_trait": "dots",
+      "display_name": "Dots",
+      "value_type": "array",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.attributes.Dots"
+      }
+    },
+    {
+      "canonical_trait": "black_knot",
+      "display_name": "Black Knot",
+      "value_type": "array",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.attributes.Black_Knot"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    },
+    "files": [
+      {
+        "label": "Cover Image",
+        "source_path": "$.files[0].src",
+        "media_type_path": "$.files[0].mediaType"
+      }
+    ]
+  },
+  "social_mappings": {},
+  "link_mappings": {
+    "website": {
+      "source_path": "$.website",
+      "source": "cip25"
+    },
+    "documentation": {
+      "source_path": "$.data",
+      "source": "cip25",
+      "notes": "Primary document IPFS URI"
+    }
+  },
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "attributes keys vary per asset (Gold, Stroke, Swirls, Dots, Black_Knot); optional paths mapped."
+    },
+    {
+      "severity": "info",
+      "message": "Document content at $.data; attributes values may be arrays."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "spacebudz",
+  "name": "SpaceBudz",
+  "definition_status": "partial",
+  "policy_ids": [
+    "4523c5e21d409b81c95b45b0aea275b8ea1406e6cafea5583b9f8a5f"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "SpaceBudz"
+    },
+    "description": {
+      "value": "One of the first native Cardano NFT collections; astronaut-themed PFPs with CIP-68 reference-token metadata."
+    },
+    "category": {
+      "value": "pfp"
+    },
+    "tags": ["pfp", "cip68", "cardano-native"]
+  },
+  "metadata_layout": {
+    "primary_standard": "cip68",
+    "metadata_root": "$",
+    "asset_name_encoding": "hex",
+    "cip68": {
+      "enabled": true,
+      "datum_path": null,
+      "reference_token_pattern": null
+    },
+    "custom": {
+      "description": "Reference-token metadata stores hex-encoded traits and type fields; many user tokens have null on-chain metadata in Blockfrost."
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "name",
+      "display_name": "Name",
+      "value_type": "string",
+      "category": "identity",
+      "source": "cip68",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.name"
+      }
+    },
+    {
+      "canonical_trait": "traits_encoded",
+      "display_name": "Traits (encoded)",
+      "value_type": "string",
+      "category": "visual",
+      "dynamic": true,
+      "source": "cip68",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.traits"
+      },
+      "notes": "Hex-encoded trait payload; decoding not implemented (GAP-002)."
+    },
+    {
+      "canonical_trait": "type_encoded",
+      "display_name": "Type (encoded)",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip68",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.type"
+      },
+      "notes": "Hex-encoded type field paired with traits blob."
+    },
+    {
+      "canonical_trait": "sha256",
+      "display_name": "Content Hash",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip68",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.sha256"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip68"
+    }
+  },
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No license or royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "warning",
+      "message": "Traits appear as CIP-68 hex-encoded values in the traits field and are not fully normalized to per-trait JSON yet (GAP-002)."
+    },
+    {
+      "severity": "warning",
+      "message": "Many assets under this policy return null on-chain metadata in Blockfrost; index reference tokens with CIP-68 metadata."
+    },
+    {
+      "severity": "info",
+      "message": "Social links, license, and royalties were not present in sampled on-chain metadata."
+    }
+  ]
+}

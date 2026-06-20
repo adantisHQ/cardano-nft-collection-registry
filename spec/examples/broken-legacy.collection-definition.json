@@ -1,0 +1,42 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "broken-legacy-spec",
+  "name": "Broken Legacy Spec",
+  "definition_status": "broken",
+  "policy_ids": [
+    "f0600000000000000000000000000000000000000000000000000000"
+  ],
+  "identity": {
+    "display_name": { "value": "Broken Legacy Spec" },
+    "description": {
+      "value": "Spec example: legacy collection with unknown layout and unreliable metadata samples."
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "unknown",
+    "metadata_root": "$",
+    "asset_name_encoding": "unknown"
+  },
+  "trait_mappings": [],
+  "media_mappings": {},
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {},
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "critical",
+      "message": "Metadata layout inconsistent across samples; automated trait extraction is not reliable."
+    },
+    {
+      "severity": "warning",
+      "message": "Multiple incompatible JSON shapes observed under the same policy."
+    },
+    {
+      "severity": "info",
+      "message": "Manual curation required before marking definition complete."
+    }
+  ]
+}

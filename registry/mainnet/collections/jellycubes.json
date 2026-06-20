@@ -1,0 +1,204 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "jellycubes",
+  "name": "Jellycubes",
+  "definition_status": "complete",
+  "policy_ids": [
+    "3ee441f40fe395a2e98eea1df7cf8816b0fca3d5d164893596ce306d"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Jellycubes"
+    },
+    "description": {
+      "value": "3D jelly cube art with RPG-style stats stored as flat root metadata fields."
+    },
+    "category": {
+      "value": "mixed"
+    },
+    "tags": ["art", "3d", "gaming", "rpg"]
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    },
+    "custom": {
+      "description": "Stats and cube assembly parts are flat root keys; image may be a single-element array."
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "Class",
+      "value_type": "string",
+      "category": "stats",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Class" }
+    },
+    {
+      "canonical_trait": "Face",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Face" }
+    },
+    {
+      "canonical_trait": "Block",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Block" }
+    },
+    {
+      "canonical_trait": "Main",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Main" }
+    },
+    {
+      "canonical_trait": "Secondary",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Secondary" }
+    },
+    {
+      "canonical_trait": "Filler",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Filler" }
+    },
+    {
+      "canonical_trait": "LeftTop",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "LeftTop" }
+    },
+    {
+      "canonical_trait": "RightTop",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "RightTop" }
+    },
+    {
+      "canonical_trait": "Backgrounds",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Backgrounds" }
+    },
+    {
+      "canonical_trait": "Strength",
+      "value_type": "integer",
+      "category": "stats",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Strength" }
+    },
+    {
+      "canonical_trait": "Dexterity",
+      "value_type": "integer",
+      "category": "stats",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Dexterity" }
+    },
+    {
+      "canonical_trait": "Intellect",
+      "value_type": "integer",
+      "category": "stats",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Intellect" }
+    },
+    {
+      "canonical_trait": "Wisdom",
+      "value_type": "integer",
+      "category": "stats",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Wisdom" }
+    },
+    {
+      "canonical_trait": "Charisma",
+      "value_type": "integer",
+      "category": "stats",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Charisma" }
+    },
+    {
+      "canonical_trait": "Constitution",
+      "value_type": "integer",
+      "category": "stats",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Constitution" }
+    },
+    {
+      "canonical_trait": "Combat Score",
+      "value_type": "score",
+      "category": "stats",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Combat Score" }
+    },
+    {
+      "canonical_trait": "Points",
+      "value_type": "integer",
+      "category": "stats",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "Points" }
+    },
+    {
+      "canonical_trait": "project",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": { "strategy": "root_flat_keys", "key": "project" }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image[0]",
+      "source": "cip25",
+      "notes": "Image stored as single-element array in samples."
+    }
+  },
+  "social_mappings": {
+    "x": {
+      "source_path": "$.Twitter",
+      "source": "cip25"
+    }
+  },
+  "link_mappings": {
+    "website": {
+      "source_path": "$.Website",
+      "source": "cip25"
+    }
+  },
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "Description field is a string array; not mapped as a single sourced value."
+    },
+    {
+      "severity": "info",
+      "message": "License not present in sampled on-chain metadata."
+    }
+  ]
+}

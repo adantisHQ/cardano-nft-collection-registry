@@ -1,0 +1,119 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "ada-handle",
+  "name": "ADA Handle",
+  "definition_status": "partial",
+  "policy_ids": [
+    "f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a"
+  ],
+  "identity": {
+    "display_name": {
+      "source_path": "$.name",
+      "source": "cip25"
+    },
+    "description": {
+      "source_path": "$.description",
+      "source": "cip25"
+    },
+    "category": {
+      "value": "identity"
+    },
+    "tags": ["identity", "handle", "ada"]
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    },
+    "custom": {
+      "description": "Handle identity fields live under core namespace and root name field."
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "handle",
+      "display_name": "Handle",
+      "value_type": "string",
+      "category": "identity",
+      "required": true,
+      "source": "cip25",
+      "extraction": { "strategy": "direct_path", "source_path": "$.name" }
+    },
+    {
+      "canonical_trait": "prefix",
+      "display_name": "Prefix",
+      "value_type": "string",
+      "category": "identity",
+      "source": "cip25",
+      "extraction": { "strategy": "direct_path", "source_path": "$.core.prefix" }
+    },
+    {
+      "canonical_trait": "og",
+      "display_name": "OG Flag",
+      "value_type": "integer",
+      "category": "identity",
+      "source": "cip25",
+      "extraction": { "strategy": "direct_path", "source_path": "$.core.og" }
+    },
+    {
+      "canonical_trait": "handle_encoding",
+      "display_name": "Handle Encoding",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.core.handleEncoding"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    }
+  },
+  "social_mappings": {},
+  "link_mappings": {
+    "website": {
+      "source_path": "$.website",
+      "source": "cip25"
+    },
+    "terms": {
+      "source_path": "$.core.termsofuse",
+      "source": "cip25"
+    }
+  },
+  "external_resources": [],
+  "license_info": {
+    "license_url": {
+      "source_path": "$.core.termsofuse",
+      "source": "cip25"
+    }
+  },
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "Identity collection; not trait-grid oriented. Twitter/discord not present in sampled metadata."
+    },
+    {
+      "severity": "info",
+      "message": "Policy-level asset entries may appear without per-handle metadata."
+    }
+  ]
+}

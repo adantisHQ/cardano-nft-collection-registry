@@ -1,0 +1,67 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "cardano-summit-2021",
+  "name": "Cardano Summit 2021",
+  "definition_status": "complete",
+  "policy_ids": [
+    "0ad7f7a3281ba7c832344eb267594899147709b708176bc1084979f1"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Cardano Summit 2021"
+    },
+    "description": {
+      "value": "Cardano Summit 2021 commemorative NFT badges; minimal name and image metadata."
+    },
+    "category": {
+      "value": "event"
+    },
+    "tags": ["event", "summit", "commemorative"]
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    }
+  },
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "No trait fields observed; name and image only. This is valid for event badge collections."
+    },
+    {
+      "severity": "info",
+      "message": "Social links, license, and royalties were not present in sampled on-chain metadata."
+    },
+    {
+      "severity": "info",
+      "message": "Distinct from generic Cardano Summit and later Summit year policies."
+    }
+  ]
+}

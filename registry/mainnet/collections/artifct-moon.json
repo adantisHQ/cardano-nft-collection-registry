@@ -1,0 +1,36 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "artifct-moon",
+  "name": "Artifct Moon",
+  "definition_status": "partial",
+  "policy_ids": [
+    "e5a2bcc51466942a9db1da62471a1b682bde3abcebafee2c7fb1e378"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Artifct Moon"
+    },
+    "description": {
+      "value": ""
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "unknown",
+    "metadata_root": "$",
+    "asset_name_encoding": "unknown"
+  },
+  "trait_mappings": [],
+  "media_mappings": {},
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {},
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "Phase 3A Top-100 include_now (TapTools rank 103). Type: art. Discovery only — no final definition in this pass."
+    }
+  ]
+}

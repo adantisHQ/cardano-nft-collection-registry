@@ -1,0 +1,114 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "pitches-at-clay-nation",
+  "name": "Pitches at Clay Nation",
+  "definition_status": "complete",
+  "policy_ids": [
+    "13e3f9964fe386930ec178d12a43c96a7f5841270c2146fc509a9f3e"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Pitches at Clay Nation"
+    },
+    "description": {
+      "value": "Clay Nation pitch/land parcels with coordinate and zone metadata."
+    },
+    "category": {
+      "value": "land"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "X",
+      "display_name": "X",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "X"
+      }
+    },
+    {
+      "canonical_trait": "Y",
+      "display_name": "Y",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Y"
+      }
+    },
+    {
+      "canonical_trait": "Size",
+      "display_name": "Size",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Size"
+      }
+    },
+    {
+      "canonical_trait": "Zone",
+      "display_name": "Zone",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Zone"
+      }
+    },
+    {
+      "canonical_trait": "Serial #",
+      "display_name": "Serial #",
+      "value_type": "string",
+      "category": "parcel",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Serial #"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    }
+  },
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "Sub-collection of Clay Nation ecosystem. Field X is a coordinate, not a social link."
+    }
+  ]
+}

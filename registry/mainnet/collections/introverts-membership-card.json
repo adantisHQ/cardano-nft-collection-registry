@@ -1,0 +1,120 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "introverts-membership-card",
+  "name": "Introverts Membership Card",
+  "definition_status": "complete",
+  "policy_ids": [
+    "9b542bc33521163a7ff3a05d1df1bcc0c0ec6a0638337e4b2870f6ea"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Introverts Membership Card"
+    },
+    "description": {
+      "value": "Membership pass with identification trait and Official Links array."
+    },
+    "category": {
+      "value": "membership"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "Identification",
+      "display_name": "Identification",
+      "value_type": "string",
+      "category": "membership",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "Identification"
+      }
+    },
+    {
+      "canonical_trait": "website",
+      "display_name": "Website",
+      "value_type": "string",
+      "category": "link",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Official Links",
+        "key": "Website"
+      }
+    },
+    {
+      "canonical_trait": "twitter",
+      "display_name": "Twitter",
+      "value_type": "string",
+      "category": "link",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Official Links",
+        "key": "Twitter"
+      }
+    },
+    {
+      "canonical_trait": "discord",
+      "display_name": "Discord",
+      "value_type": "string",
+      "category": "link",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "array_singleton_object",
+        "source_path": "$.Official Links",
+        "key": "Discord"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    }
+  },
+  "social_mappings": {
+    "x": {
+      "source_path": "$.Official Links[1].Twitter",
+      "source": "cip25"
+    },
+    "discord": {
+      "source_path": "$.Official Links[2].Discord",
+      "source": "cip25"
+    }
+  },
+  "link_mappings": {
+    "website": {
+      "source_path": "$.Official Links[0].Website",
+      "source": "cip25"
+    }
+  },
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "Official Links array order assumed stable (Website, Twitter, Discord)."
+    }
+  ]
+}

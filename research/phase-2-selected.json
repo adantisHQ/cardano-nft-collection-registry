@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Boss Cat Rocket Parts",
+    "collection_id": "boss-cat-rocket-parts",
+    "policy_ids": ["761ed110b4040e153ffc20bd2203f2e7d57d610a0cf0eae6167e574d"],
+    "sample_assets": [],
+    "notes": "Phase 2 multi-policy: companion component policy paired with Phase 1 Boss Cat Rocket Club; tests modular part metadata vs PFP body."
+  },
+  {
+    "name": "Pitches at Clay Nation",
+    "collection_id": "pitches-at-clay-nation",
+    "policy_ids": ["13e3f9964fe386930ec178d12a43c96a7f5841270c2146fc509a9f3e"],
+    "sample_assets": [],
+    "notes": "Phase 2 multi-policy: Clay Nation sub-collection (land/pitch assets); tests ecosystem policy boundaries and layout drift from core Clay Nation."
+  },
+  {
+    "name": "Clay Nation x Good Charlotte by Clay Mates",
+    "collection_id": "clay-nation-good-charlotte",
+    "policy_ids": ["94da605878403d07c144fe96cd50fe20c16186dd8d171c78ed6a8768"],
+    "sample_assets": [],
+    "notes": "Phase 2 collab drop under Clay Mates; tests collab-specific trait/media fields and linked-brand metadata."
+  },
+  {
+    "name": "Yummi Universe - Naru",
+    "collection_id": "yummi-universe-naru",
+    "policy_ids": ["b1814c6d3b0f7a42c9ee990c06c9d504a42bb22bf0e34e7908ae21b2"],
+    "sample_assets": [],
+    "notes": "Phase 2 multi-policy ecosystem: seasonal character line (sibling policies for Spoopy/Winter/Spring/Summer Naru); tests repeated layout across related policies."
+  },
+  {
+    "name": "Chilled Kongs Vox Avatar",
+    "collection_id": "chilled-kongs-vox-avatar",
+    "policy_ids": ["5d8bb1d5376bf641ff2c51c7744efa8969e0dbdb18011876a2a16188"],
+    "sample_assets": [],
+    "notes": "Phase 2 CIP-68 candidate: companion vox/avatar policy distinct from base Chilled Kongs; may expose reference-token or alternate encoding patterns (GAP-002 follow-up)."
+  },
+  {
+    "name": "Epoch Genesis v2",
+    "collection_id": "epoch-genesis-v2",
+    "policy_ids": ["123da5e4ef337161779c6729d2acd765f7a33a833b2a21a063ef65a5"],
+    "sample_assets": [],
+    "notes": "Phase 2 genesis/epoch naming; candidate for non-standard or CIP-68-adjacent metadata beyond Phase 1 SpaceBudz baseline."
+  },
+  {
+    "name": "OREMOB",
+    "collection_id": "oremob",
+    "policy_ids": ["062b1da3d344c1e6208ef908b2d308201e7ff6bcfddf0f606249817f"],
+    "sample_assets": [],
+    "notes": "Phase 2 gaming mech collection; tests game-asset trait grids and media distinct from Phase 1 DEADPXLZ HTML pattern."
+  },
+  {
+    "name": "OREMOB CASES by ENCASE.ART",
+    "collection_id": "oremob-cases-encase-art",
+    "policy_ids": ["9e6b0cf53e26c14f03eaafb45072c2800ba053b7ffa319fa29d42f5c"],
+    "sample_assets": [],
+    "notes": "Phase 2 multi-policy: nested case/airdrop policy in OREMOB ecosystem; tests component inventory metadata."
+  },
+  {
+    "name": "Cornucopias GTI Javelin 2022",
+    "collection_id": "cornucopias-gti-javelin-2022",
+    "policy_ids": ["086849cd9f672e731e0d9590a2d28a6a690ffa2f73bae0e1970f0491"],
+    "sample_assets": [],
+    "notes": "Phase 2 Cornucopias ecosystem (vehicle policy, not Phase 1 land zones); tests shared brand metadata across game asset types."
+  },
+  {
+    "name": "Boss Planet Real Estate",
+    "collection_id": "boss-planet-real-estate",
+    "policy_ids": ["5a2cdc6e3aa9612fe4676672f443e7efd39c309d45e7919a4bf27750"],
+    "sample_assets": [],
+    "notes": "Phase 2 land/real-estate variant in Boss Cat universe; tests parcel-style fields distinct from Pavia/Cornucopias land claims."
+  },
+  {
+    "name": "UnboundedEarth",
+    "collection_id": "unbounded-earth",
+    "policy_ids": ["bb78d3b6638537d6df7ae43791ead3d50e75fdae82131eff2b7ae994"],
+    "sample_assets": [],
+    "notes": "Phase 2 standalone land/metaverse branding; tests alternate land parcel metadata without Phase 1 ecosystem overlap."
+  },
+  {
+    "name": "Cabins by The Ape Society",
+    "collection_id": "cabins-ape-society",
+    "policy_ids": ["d4e087164acf8314f1203f0b0996f14908e2a199a296d065f14b8b09"],
+    "sample_assets": [],
+    "notes": "Phase 2 housing/land hybrid in Ape Society ecosystem; tests building/parcel metadata and multi-policy society structure."
+  },
+  {
+    "name": "Book.io - Gutenberg Bible Collection",
+    "collection_id": "book-io-gutenberg-bible",
+    "policy_ids": ["477cec772adb1466b301fb8161f505aa66ed1ee8d69d3e7984256a43"],
+    "sample_assets": [],
+    "notes": "Phase 2 flagship Book.io media-linked collection; tests document metadata, files[], and external reading resources."
+  },
+  {
+    "name": "Book.io - The Wizard Tim Audiobook",
+    "collection_id": "book-io-wizard-tim-audiobook",
+    "policy_ids": ["e1d98823331929b449b037b212f275e15d9dba800caa6ebf42dbc627"],
+    "sample_assets": [],
+    "notes": "Phase 2 audiobook variant in Book.io cluster; tests audio mediaType, multi-file playback metadata, and title-specific fields."
+  },
+  {
+    "name": "Book.io - Whitepaper 2.0",
+    "collection_id": "book-io-whitepaper-2",
+    "policy_ids": ["b1f614be8ed0921f2d3fc4d013f2ab076fe62db43b5bdcce686c4377"],
+    "sample_assets": [],
+    "notes": "Phase 2 document/whitepaper NFT; candidate for on-chain license, terms, or rights fields absent in Phase 1 samples."
+  },
+  {
+    "name": "Introverts Membership Card",
+    "collection_id": "introverts-membership-card",
+    "policy_ids": ["9b542bc33521163a7ff3a05d1df1bcc0c0ec6a0638337e4b2870f6ea"],
+    "sample_assets": [],
+    "notes": "Phase 2 membership pass pattern; tests access/tier/card fields rather than trait-grid PFP metadata."
+  },
+  {
+    "name": "cNFTcon Legacy Pass",
+    "collection_id": "cnftcon-legacy-pass",
+    "policy_ids": ["5fa72fbeecbe80a3e15de1cacab54ba5e310e2c36ae85351132ed4ad"],
+    "sample_assets": [],
+    "notes": "Phase 2 event legacy pass; tests pass-style commemorative metadata distinct from Cardano Summit 2021 badges."
+  },
+  {
+    "name": "Smart Places",
+    "collection_id": "smart-places",
+    "policy_ids": ["64036a8c21866b47d4597657151e1490a7c225caef4715b37b9eca38"],
+    "sample_assets": [],
+    "notes": "Phase 2 art-first collection; tests generative/art metadata layouts without gaming or land parcel conventions."
+  },
+  {
+    "name": "Chilled Kongs",
+    "collection_id": "chilled-kongs",
+    "policy_ids": ["c56d4cceb8a8550534968e1bf165137ca41e908d2d780cc1402079bd"],
+    "sample_assets": [],
+    "notes": "Phase 2 major PFP with likely attributes-object or non-flat trait layout; pairs with Vox policy; not a Phase 1 flat-root duplicate."
+  },
+  {
+    "name": "[DEPRECATED] Jungle Wenno Cat",
+    "collection_id": "deprecated-jungle-wenno-cat",
+    "policy_ids": ["3ca291585bbbd1deafab0495f8a7fda4753fbeae96c550492bcfd760"],
+    "sample_assets": [],
+    "notes": "Phase 2 controlled broken/partial metadata test: deprecated naming in TapTools; expect sparse or inconsistent on-chain fields (not an Unknown row)."
+  }
+]

@@ -1,0 +1,158 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "chilled-kongs-vox-avatar",
+  "name": "Chilled Kongs Vox Avatar",
+  "definition_status": "complete",
+  "policy_ids": [
+    "5d8bb1d5376bf641ff2c51c7744efa8969e0dbdb18011876a2a16188"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "Chilled Kongs Vox Avatar"
+    },
+    "description": {
+      "value": "3D vox avatar companion policy; CIP-25 flat traits with GLTF in files[]."
+    },
+    "category": {
+      "value": "pfp"
+    }
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "eye",
+      "display_name": "eye",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "eye"
+      }
+    },
+    {
+      "canonical_trait": "hat",
+      "display_name": "hat",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "hat"
+      }
+    },
+    {
+      "canonical_trait": "body",
+      "display_name": "body",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "body"
+      }
+    },
+    {
+      "canonical_trait": "mouth",
+      "display_name": "mouth",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "mouth"
+      }
+    },
+    {
+      "canonical_trait": "earring",
+      "display_name": "earring",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "earring"
+      }
+    },
+    {
+      "canonical_trait": "clothing",
+      "display_name": "clothing",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "clothing"
+      }
+    },
+    {
+      "canonical_trait": "background",
+      "display_name": "background",
+      "value_type": "string",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "root_flat_keys",
+        "key": "background"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    },
+    "files": [
+      {
+        "label": "GLTF Avatar",
+        "source_path": "$.files[0].src",
+        "media_type_path": "$.files[0].mediaType"
+      }
+    ]
+  },
+  "social_mappings": {
+    "x": {
+      "source_path": "$.twitter",
+      "source": "cip25"
+    }
+  },
+  "link_mappings": {
+    "website": {
+      "source_path": "$.website",
+      "source": "cip25"
+    },
+    "other": {
+      "source_path": "$.metaverse",
+      "source": "cip25",
+      "notes": "Metaverse link"
+    }
+  },
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "Not CIP-68; pairs with Chilled Kongs base policy. bcrc* fields are cross-promo links."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "registry_version": "1.0.0",
+  "collection_id": "deadpxlz",
+  "name": "DEADPXLZ",
+  "definition_status": "complete",
+  "policy_ids": [
+    "1ec85dcee27f2d90ec1f9a1e4ce74a667dc9be8b184463223f9c9601"
+  ],
+  "identity": {
+    "display_name": {
+      "value": "DEADPXLZ"
+    },
+    "description": {
+      "value": "Interactive HTML pixel art gaming collection; traits split across tags array and properties key-value pairs."
+    },
+    "category": {
+      "value": "gaming"
+    },
+    "tags": ["gaming", "html", "interactive"]
+  },
+  "metadata_layout": {
+    "primary_standard": "cip25",
+    "metadata_root": "$",
+    "asset_name_encoding": "utf8",
+    "cip25": {
+      "label": "721",
+      "policy_path": "$.721.<policy_id>",
+      "asset_metadata_path": "$.721.<policy_id>.<asset_name>"
+    },
+    "cip68": {
+      "enabled": false,
+      "datum_path": null,
+      "reference_token_pattern": null
+    },
+    "custom": {
+      "description": "Visual tags in tags[] array; structured properties use [{key,value}] pairs."
+    }
+  },
+  "trait_mappings": [
+    {
+      "canonical_trait": "tags",
+      "display_name": "Tags",
+      "value_type": "array",
+      "category": "visual",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "direct_path",
+        "source_path": "$.tags"
+      },
+      "notes": "Visual tag list; individual tags are not split into separate canonical traits."
+    },
+    {
+      "canonical_trait": "type",
+      "display_name": "Type",
+      "value_type": "string",
+      "category": "metadata",
+      "source": "cip25",
+      "extraction": {
+        "strategy": "key_value_array",
+        "source_path": "$.properties",
+        "key": "type",
+        "key_field": "key",
+        "value_field": "value"
+      }
+    }
+  ],
+  "media_mappings": {
+    "image": {
+      "source_path": "$.image",
+      "source": "cip25"
+    },
+    "animation": {
+      "source_path": "$.src",
+      "source": "cip25",
+      "notes": "Interactive HTML asset (type text/html)."
+    }
+  },
+  "social_mappings": {},
+  "link_mappings": {},
+  "external_resources": [],
+  "license_info": {},
+  "royalty_info": {
+    "has_royalties": false,
+    "source": "unknown",
+    "notes": "No royalty fields observed in sampled on-chain metadata."
+  },
+  "normalization_rules": [],
+  "indexing_notes": [
+    {
+      "severity": "info",
+      "message": "properties[{key,value}] type field mapped via key_value_array; additional property keys not observed in samples."
+    },
+    {
+      "severity": "warning",
+      "message": "Individual visual tags in tags[] are not mapped to separate canonical traits without per-tag extraction."
+    },
+    {
+      "severity": "info",
+      "message": "Social links and license were not present in sampled on-chain metadata."
+    }
+  ]
+}
