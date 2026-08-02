@@ -1,6 +1,6 @@
 {
   "name": "cardano-nft-collection-registry",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Collection Definition Registry for Cardano NFT metadata interpretation",
   "license": "Apache-2.0",
