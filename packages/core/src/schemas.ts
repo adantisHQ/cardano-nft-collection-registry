@@ -192,7 +192,7 @@ export const traitMappingSchema = z.object({
   source: traitMappingSourceSchema.optional(),
   source_paths: z.array(z.string()).optional(),
   extraction: traitExtractionSchema.optional(),
-  normalization: z.record(z.unknown()).optional(),
+  normalization: z.record(z.string(), z.unknown()).optional(),
   allowed_values: z.array(z.unknown()).optional(),
   notes: z.string().optional(),
 });
